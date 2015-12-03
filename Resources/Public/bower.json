@@ -5,12 +5,13 @@
   ],
   "description": "the last carousel you'll ever need",
   "main": "",
-  "moduleType": [],
   "keywords": [
     "slick",
     "slider",
     "jquery"
   ],
   "license": "MIT",
-  "homepage": ""
+  "dependencies": {
+    "slick-carousel": "~1.5.9"
+  }
 }

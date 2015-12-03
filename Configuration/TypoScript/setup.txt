@@ -1,0 +1,16 @@
+page {
+    includeCSS {
+        slickslider = EXT:slickslider/Resources/Public/Css/slickslider.min.css
+    }
+}
+
+[applicationContext = Development]
+    config{
+        compressJs = 0
+        compressCss = 0
+        concatenateCss = 0
+        concatenateJs = 0
+        concatenateJsAndCss = 0
+        inlineStyle2TempFile = 0
+    }
+[end]
