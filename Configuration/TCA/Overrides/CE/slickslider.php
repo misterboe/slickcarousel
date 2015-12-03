@@ -7,7 +7,7 @@ $tmp_slickslider = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tmp_slickslider);
 
 
-$GLOBALS['TCA']['tt_content']['types']['slickslider'] = array(
+$GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = array(
     'showitem' => '	--palette--;Settings;general,
 					--div--;Slick Slides,
 					--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
@@ -22,6 +22,6 @@ $GLOBALS['TCA']['tt_content']['types']['slickslider'] = array(
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'Slick Carousel',
-    'slickslider',
+    'slickcarousel',
     'EXT:slickslider/ext_icon.gif'
 );

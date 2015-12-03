@@ -1,11 +1,11 @@
 #########################################
 #Basic
 #########################################
-# cat=Slick Slider/001; type=boolean; label = Include jQuery
+# cat=Slick Carousel/001; type=boolean; label = Include jQuery
 slick_jquery = 1
 
-# cat=Slick Slider/002; type=boolean; label = Include Slick CSS
+# cat=Slick Carousel/002; type=boolean; label = Include Slick CSS
 slick_css = 1
 
-# cat=Slick Slider/003; type=boolean; label = Include Slider JavaScript
+# cat=Slick Carousel/003; type=boolean; label = Include Slider JavaScript
 slick_js = 1

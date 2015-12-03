@@ -7,5 +7,5 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $_EXTKEY,                    // Extension Key
     'Configuration/TypoScript',  // Path to setup.txt and constants.txt
-    'Slick Slider'            // Title in the selector box
+    'Slick Carousel'            // Title in the selector box
 );

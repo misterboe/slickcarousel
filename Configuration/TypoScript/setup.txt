@@ -28,8 +28,8 @@
 [end]
 
 ### Template ###
-tt_content.amowlslider = FLUIDTEMPLATE
-tt_content.amowlslider {
+tt_content.slickcarousel = FLUIDTEMPLATE
+tt_content.slickcarousel {
     templateName = Slickslider
     templateRootPaths {
         10 = EXT:slickslider/Resources/Private/Templates/ContentElements/
