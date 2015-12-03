@@ -1,5 +1,5 @@
 {
-  "name": "slickslider",
+  "name": "slickcarousel",
   "authors": [
     "Boris Schauer <me@bschauer.de>"
   ],
@@ -7,7 +7,7 @@
   "main": "",
   "keywords": [
     "slick",
-    "slider",
+    "carousel",
     "jquery"
   ],
   "license": "MIT",

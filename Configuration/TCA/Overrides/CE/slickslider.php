@@ -21,7 +21,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickslider'] = array(
 );
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Slider',
+    'Slick Carousel',
     'slickslider',
     'EXT:slickslider/ext_icon.gif'
 );

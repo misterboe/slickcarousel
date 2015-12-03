@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'Slick Slider',
+    'title' => 'Slick Carousel',
     'description' => 'the last carousel you\'ll ever need',
     'category' => 'templates',
     'version' => '0.0.1',

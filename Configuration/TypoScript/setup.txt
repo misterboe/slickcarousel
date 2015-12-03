@@ -26,3 +26,20 @@
         inlineStyle2TempFile = 0
     }
 [end]
+
+### Template ###
+tt_content.amowlslider = FLUIDTEMPLATE
+tt_content.amowlslider {
+    templateName = Slickslider
+    templateRootPaths {
+        10 = EXT:slickslider/Resources/Private/Templates/ContentElements/
+    }
+
+    partialRootPaths {
+        10 = EXT:slickslider/Resources/Private/Partials/
+    }
+
+    layoutRootPaths {
+        10 = EXT:slickslider/Resources/Private/Layouts/
+    }
+}
