@@ -5,9 +5,15 @@
 
 	<f:layout name="Default" />
 	<f:section name="Main">
-
+		<div class="your-class">
+			<div>your content</div>
+			<div>your content</div>
+			<div>your content</div>
+		</div>
 		<v:asset.script>
-
+			$(document).ready(function () {
+				$('.your-class').slick({});
+			});
 		</v:asset.script>
 	</f:section>
 </div>

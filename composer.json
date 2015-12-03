@@ -19,7 +19,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Bo\\Slickslider\\": "Classes"
+      "Bo\\Slickcarousel\\": "Classes"
     }
   },
   "extra": {

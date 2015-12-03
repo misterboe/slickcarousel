@@ -8,12 +8,12 @@ $backupCTypeItems = $GLOBALS['TCA']['tt_content']['columns']['CType']['config'][
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'] = array(
     array(
-        'slickslider',
+        'slickcarousel',
         '--div--'
     ),
 );
 
-include('CE/slickslider.php');
+include('CE/slickcarousel.php');
 
 foreach ($backupCTypeItems as $key => $value) {
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = $value;

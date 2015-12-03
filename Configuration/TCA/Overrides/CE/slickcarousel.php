@@ -23,5 +23,5 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = array(
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'Slick Carousel',
     'slickcarousel',
-    'EXT:slickslider/ext_icon.gif'
+    'EXT:slickcarousel/ext_icon.gif'
 );

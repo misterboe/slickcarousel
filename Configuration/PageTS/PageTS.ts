@@ -4,17 +4,17 @@ mod.wizards {
             slick {
                 header = Slick
                 elements {
-                    slickslider {
-                        icon = ../typo3conf/ext/slickslider/ext_icon.gif
+                    slickcarousel {
+                        icon = ../typo3conf/ext/slickcarousel/ext_icon.gif
                         title = slick
                         description = the last carousel you'll ever need
                         tt_content_defValues {
-                            CType = slickslider
+                            CType = slickcarousel
                         }
                     }
                 }
             }
-            slick.show := addToList(slickslider)
+            slick.show := addToList(slickcarousel)
         }
     }
 }

@@ -1,18 +1,18 @@
 [globalVar = LIT:1 = {$slick_css}]
     page.includeCSS {
-        slickslider = EXT:slickslider/Resources/Public/Css/slickslider.min.css
+        slickcarousel = EXT:slickcarousel/Resources/Public/Css/slickcarousel.min.css
     }
 [global]
 
 [globalVar = LIT:1 = {$slick_jquery}]
     page.includeJSFooterlibs {
-        jQuery = EXT:slickslider/Resources/Public/JavaScript/jquery.min.js
+        jQuery = EXT:slickcarousel/Resources/Public/JavaScript/jquery.min.js
     }
 [global]
 
 [globalVar = LIT:1 = {$slick_css}]
     page.includeJSFooter {
-        slick = EXT:slickslider/Resources/Public/JavaScript/slick.min.js
+        slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
     }
 [global]
 
@@ -30,16 +30,16 @@
 ### Template ###
 tt_content.slickcarousel = FLUIDTEMPLATE
 tt_content.slickcarousel {
-    templateName = Slickslider
+    templateName = Slickcarousel
     templateRootPaths {
-        10 = EXT:slickslider/Resources/Private/Templates/ContentElements/
+        10 = EXT:slickcarousel/Resources/Private/Templates/ContentElements/
     }
 
     partialRootPaths {
-        10 = EXT:slickslider/Resources/Private/Partials/
+        10 = EXT:slickcarousel/Resources/Private/Partials/
     }
 
     layoutRootPaths {
-        10 = EXT:slickslider/Resources/Private/Layouts/
+        10 = EXT:slickcarousel/Resources/Private/Layouts/
     }
 }
