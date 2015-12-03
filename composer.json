@@ -1,0 +1,34 @@
+{
+  "name": "bo/slickslider",
+  "description": "Slick Slider for Typo3",
+  "type": "typo3-cms-extension",
+  "version": "0.0.1",
+  "require": {
+    "typo3/cms": ">=7.6.0,<8.0",
+    "fluidtypo3/vhs": "^2.3.3"
+  },
+  "require-dev": {
+    "typo3/cms": ">=7.6.0,<8.0",
+    "fluidtypo3/vhs": "^2.3.3"
+  },
+  "authors": [
+    {
+      "name": "Boris Schauer",
+      "email": "schauer@analog.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bo\\Slickslider\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web",
+      "Package": {
+        "partOfMinimalUsableSystem": true
+      }
+    }
+  }
+}
