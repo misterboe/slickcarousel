@@ -9,7 +9,7 @@
   },
   "require-dev": {
     "typo3/cms": ">=7.6.0,<8.0",
-    "fluidtypo3/vhs": "^2.3.3"
+    "fluidtypo3/vhs": "^2.4.0"
   },
   "authors": [
     {
