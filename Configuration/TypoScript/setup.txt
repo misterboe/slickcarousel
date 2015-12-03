@@ -1,11 +1,23 @@
-page {
-    includeCSS {
+[globalVar = LIT:1 = {$slick_css}]
+    page.includeCSS {
         slickslider = EXT:slickslider/Resources/Public/Css/slickslider.min.css
     }
-}
+[global]
+
+[globalVar = LIT:1 = {$slick_jquery}]
+    page.includeJSFooterlibs {
+        jQuery = EXT:slickslider/Resources/Public/JavaScript/jquery.min.js
+    }
+[global]
+
+[globalVar = LIT:1 = {$slick_css}]
+    page.includeJSFooter {
+        slick = EXT:slickslider/Resources/Public/JavaScript/slick.min.js
+    }
+[global]
 
 [applicationContext = Development]
-    config{
+    config {
         compressJs = 0
         compressCss = 0
         concatenateCss = 0
