@@ -5,14 +5,22 @@
 
 	<f:layout name="Default" />
 	<f:section name="Main">
-		<div class="your-class">
-			<div>your content</div>
-			<div>your content</div>
-			<div>your content</div>
+		<div class="slick">
+			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/1"></div>
+			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/2"></div>
+			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/3"></div>
+			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/4"></div>
 		</div>
 		<v:asset.script>
 			$(document).ready(function () {
-				$('.your-class').slick({});
+				$('.slick').slick({
+					dots: true,
+					infinite: true,
+					speed: 500,
+					fade: true,
+					cssEase: 'linear',
+					arrows: true
+				});
 			});
 		</v:asset.script>
 	</f:section>

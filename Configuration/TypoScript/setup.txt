@@ -1,6 +1,6 @@
 [globalVar = LIT:1 = {$slick_css}]
     page.includeCSS {
-        slickcarousel = EXT:slickcarousel/Resources/Public/Css/slickcarousel.min.css
+        slickcarousel = EXT:slickcarousel/Resources/Public/Css/slick.min.css
     }
 [global]
 
@@ -24,6 +24,7 @@
         concatenateJs = 0
         concatenateJsAndCss = 0
         inlineStyle2TempFile = 0
+        no_cache = 1
     }
 [end]
 
@@ -32,7 +33,7 @@ tt_content.slickcarousel = FLUIDTEMPLATE
 tt_content.slickcarousel {
     templateName = Slickcarousel
     templateRootPaths {
-        10 = EXT:slickcarousel/Resources/Private/Templates/ContentElements/
+        10 = EXT:slickcarousel/Resources/Private/Templates/
     }
 
     partialRootPaths {
