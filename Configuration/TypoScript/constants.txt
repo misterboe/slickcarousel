@@ -1,10 +1,11 @@
-page {
-	slickslider {
-		# cat=example package: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
-		layoutRootPath = EXT:slickslider/Resources/Private/Layouts/
-		# cat=example package: advanced/100/110; type=string; label=Partial Root Path: Path to partials
-		partialRootPath = EXT:slickslider/Resources/Private/Partials/
-		# cat=example package: advanced/100/120; type=string; label=Template Root Path: Path to templates
-		templateRootPath = EXT:slickslider/Resources/Private/Templates/
-	}
-}
+#########################################
+#Basic
+#########################################
+# cat=Slick Slider/001; type=boolean; label = Include jQuery
+slick_jquery = 1
+
+# cat=Slick Slider/002; type=boolean; label = Include Slick CSS
+slick_css = 1
+
+# cat=Slick Slider/003; type=boolean; label = Include Slider JavaScript
+slick_js = 1
