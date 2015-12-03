@@ -1,0 +1,16 @@
+{
+  "name": "slickslider",
+  "authors": [
+    "Boris Schauer <me@bschauer.de>"
+  ],
+  "description": "the last carousel you'll ever need",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "slick",
+    "slider",
+    "jquery"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
