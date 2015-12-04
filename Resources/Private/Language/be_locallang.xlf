@@ -4,6 +4,10 @@
         <header/>
         <body>
 
+			<trans-unit id="slides" xml:space="preserve">
+				<source>Slick Slides</source>
+			</trans-unit>
+
             <trans-unit id="settings" xml:space="preserve">
 				<source>Slick Settings</source>
 			</trans-unit>
@@ -101,6 +105,35 @@
 			</trans-unit>
 			<trans-unit id="zIndex" xml:space="preserve">
 				<source>zIndex: Set the zIndex values for slides, useful for IE9 and lower</source>
+			</trans-unit>
+
+			<trans-unit id="xs" xml:space="preserve">
+				<source>Extra small devices Phones (≤768px)</source>
+			</trans-unit>
+			<trans-unit id="sm" xml:space="preserve">
+				<source>Small devices Tablets (≥768px)</source>
+			</trans-unit>
+			<trans-unit id="md" xml:space="preserve">
+				<source>Medium devices Desktops (≥992px)</source>
+			</trans-unit>
+			<trans-unit id="lg" xml:space="preserve">
+				<source>Large devices Desktops (≥1200px)</source>
+			</trans-unit>
+
+			<trans-unit id="slidesToShow" xml:space="preserve">
+				<source>slidesToShow: # of slides to show at a time</source>
+			</trans-unit>
+			<trans-unit id="slidesToScroll" xml:space="preserve">
+				<source>slidesToScroll: # of slides to scroll at a time</source>
+			</trans-unit>
+			<trans-unit id="rows" xml:space="preserve">
+				<source>rows: Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+			</trans-unit>
+			<trans-unit id="slidesPerRow" xml:space="preserve">
+				<source>slidesPerRow: With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+			</trans-unit>
+			<trans-unit id="arrows" xml:space="preserve">
+				<source>arrows: Enable Next/Prev arrows</source>
 			</trans-unit>
         </body>
     </file>

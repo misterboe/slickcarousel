@@ -35,9 +35,9 @@ $tmp_slickslider = array(
 
 $GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = array(
     'showitem' => '	--palette--;Settings;general,
-    				pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
-					--div--;Slick Slides,
-					tx_slickcarousel,
+                    tx_slickcarousel;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides,
+					--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+					pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 					--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
 					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.visibility;visibility,
 					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;access,
