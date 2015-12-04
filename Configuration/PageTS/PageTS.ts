@@ -5,7 +5,7 @@ mod.wizards {
                 header = Slick
                 elements {
                     slickcarousel {
-                        icon = ../typo3conf/ext/slickcarousel/ext_icon.gif
+                        icon = EXT:slickcarousel/ext_icon.gif
                         title = slick
                         description = the last carousel you'll ever need
                         tt_content_defValues {
