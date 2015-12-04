@@ -5,19 +5,49 @@
 
 	<f:layout name="Default" />
 	<f:section name="Main">
-		<div class="slick-slider">
+		<div class="slick-slider" id="slick-id{data.uid}">
 			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/1"></div>
 			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/2"></div>
 			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/3"></div>
 			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/4"></div>
 		</div>
-		<v:asset.script>
+		<v:asset.script name="slick-id{data.uid}">
 			$(document).ready(function () {
-				$('.slick-slider').slick({
+				$('#slick-id{data.uid}').slick({
+					accessibility: true,
+					autoplay: true,
+					autoplaySpeed: 3000,
+					centerMode: false,
+					centerPadding: '50px',
+					cssEase: 'ease',
 					dots: true,
+					dotsClass: 'slick-dots',
+					draggable: true,
+					easing: 'linear',
+					edgeFriction: 0.15,
+					fade: false,
+					arrows: true,
+					mobileFirst: false,
 					infinite: true,
-					speed: 500,
-					arrows: true
+					initialSlide: 0,
+					lazyLoad: 'ondemand', // 'ondemand' or 'progressive'
+					pauseOnHover: true,
+					pauseOnDotsHover: true,
+					respondTo: 'window', // 'window', 'slider' or 'min'
+					rows: 1,
+					slidesPerRow: 1,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					speed: 300,
+					swipe: true,
+					swipeToSlide: false,
+					touchMove: true,
+					useCSS: true,
+					variableWidth: false,
+					vertical: false,
+					verticalSwiping: false,
+					rtl: false,
+					waitForAnimate: true
 				});
 			});
 		</v:asset.script>
