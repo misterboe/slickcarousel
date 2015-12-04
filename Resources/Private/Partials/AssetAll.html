@@ -5,41 +5,39 @@
 	 data-namespace-typo3-fluid="true">
 
 	<f:section name="JS-Responsive">
-		<bo:flexForm />
-
-		<v:asset.script name="slick-id{data.uid}">
+		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
 			$(document).ready(function () {
 				$('#slick-id{data.uid}').slick({
-					accessibility: true,
-					autoplay: true,
-					autoplaySpeed: 3000,
-					centerMode: false,
-					centerPadding: '50px',
-					cssEase: 'ease',
-					dots: true,
-					dotsClass: 'slick-dots',
-					draggable: true,
-					easing: 'linear',
-					edgeFriction: 0.15,
-					fade: false,
-					mobileFirst: true,
-					infinite: true,
-					initialSlide: 0,
-					lazyLoad: 'ondemand', // 'ondemand' or 'progressive'
-					pauseOnHover: true,
-					pauseOnDotsHover: true,
-					respondTo: 'window', // 'window', 'slider' or 'min'
-					speed: 300,
-					swipe: true,
-					swipeToSlide: false,
-					touchMove: true,
-					useCSS: true,
-					variableWidth: false,
-					vertical: false,
-					verticalSwiping: false,
-					rtl: false,
-					waitForAnimate: true,
-					zIndex: 1000,
+					accessibility: <f:format.raw>{data.pi_flexform.accessibility}</f:format.raw>,
+					autoplay: <f:format.raw>{data.pi_flexform.autoplay}</f:format.raw>,
+					autoplaySpeed: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
+					centerMode: <f:format.raw>{data.pi_flexform.centerMode}</f:format.raw>,
+					centerPadding: '<f:format.raw>{data.pi_flexform.centerPadding}</f:format.raw>',
+					cssEase: '<f:format.raw>{data.pi_flexform.cssEase}</f:format.raw>',
+					dots: <f:format.raw>{data.pi_flexform.dots}</f:format.raw>,
+					dotsClass: '<f:format.raw>{data.pi_flexform.dotsClass}</f:format.raw>',
+					draggable: <f:format.raw>{data.pi_flexform.draggable}</f:format.raw>,
+					easing: '<f:format.raw>{data.pi_flexform.easing}</f:format.raw>',
+					edgeFriction: <f:format.raw>{data.pi_flexform.edgeFriction}</f:format.raw>,
+					fade: <f:format.raw>{data.pi_flexform.fade}</f:format.raw>,
+					mobileFirst: <f:format.raw>{data.pi_flexform.mobileFirst}</f:format.raw>,
+					infinite: <f:format.raw>{data.pi_flexform.infinite}</f:format.raw>,
+					initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>,
+					lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>', // 'ondemand' or 'progressive'
+					pauseOnHover: <f:format.raw>{data.pi_flexform.pauseOnHover}</f:format.raw>,
+					pauseOnDotsHover: <f:format.raw>{data.pi_flexform.pauseOnDotsHover}</f:format.raw>,
+					respondTo: '<f:format.raw>{data.pi_flexform.respondTo}</f:format.raw>', // 'window', 'slider' or 'min'
+					speed: <f:format.raw>{data.pi_flexform.speed}</f:format.raw>,
+					swipe: <f:format.raw>{data.pi_flexform.swipe}</f:format.raw>,
+					swipeToSlide: <f:format.raw>{data.pi_flexform.swipeToSlide}</f:format.raw>,
+					touchMove: <f:format.raw>{data.pi_flexform.touchMove}</f:format.raw>,
+					useCSS: <f:format.raw>{data.pi_flexform.useCSS}</f:format.raw>,
+					variableWidth: <f:format.raw>{data.pi_flexform.variableWidth}</f:format.raw>,
+					vertical: <f:format.raw>{data.pi_flexform.vertical}</f:format.raw>,
+					verticalSwiping: <f:format.raw>{data.pi_flexform.verticalSwiping}</f:format.raw>,
+					rtl: <f:format.raw>{data.pi_flexform.rtl}</f:format.raw>,
+					waitForAnimate: <f:format.raw>{data.pi_flexform.waitForAnimate}</f:format.raw>,
+					zIndex: <f:format.raw>{data.pi_flexform.zIndex}</f:format.raw>,
 					responsive: [
 						{
 							breakpoint: 1170,

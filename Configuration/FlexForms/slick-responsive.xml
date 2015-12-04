@@ -79,6 +79,63 @@
                             </config>
                         </TCEforms>
                     </dots>
+                    <dotsClass type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:dotsClass</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>1</size>
+                                <default>slick-dots</default>
+                            </config>
+                        </TCEforms>
+                    </dotsClass>
+                    <draggable type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:draggable</label>
+                            <config type="array">
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </draggable>
+                    <draggable type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:draggable</label>
+                            <config type="array">
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </draggable>
+                    <easing type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:easing</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>1</size>
+                                <default>linear</default>
+                            </config>
+                        </TCEforms>
+                    </easing>
+                    <edgeFriction type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:edgeFriction</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>1</size>
+                                <default>0.15</default>
+                            </config>
+                        </TCEforms>
+                    </edgeFriction>
+                    <fade type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:fade</label>
+                            <config type="array">
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </fade>
                     <mobileFirst type="array">
                         <TCEforms type="array">
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:mobileFirst</label>

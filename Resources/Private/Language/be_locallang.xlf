@@ -29,16 +29,16 @@
 				<source>centerMode: Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
 			</trans-unit>
             <trans-unit id="centerPadding" xml:space="preserve">
-				<source>Side padding when in center mode. (px or %)</source>
+				<source>centerPadding: Side padding when in center mode. (px or %)</source>
 			</trans-unit>
             <trans-unit id="cssEase" xml:space="preserve">
-				<source>CSS3 easing</source>
+				<source>cssEase: CSS3 easing</source>
 			</trans-unit>
             <trans-unit id="dots" xml:space="preserve">
-				<source>Current slide indicator dots</source>
+				<source>dots: Current slide indicator dots</source>
 			</trans-unit>
             <trans-unit id="dotsClass" xml:space="preserve">
-				<source>Class for slide indicator dots container</source>
+				<source>dotsClass: Class for slide indicator dots container</source>
 			</trans-unit>
             <trans-unit id="draggable" xml:space="preserve">
 				<source>Enables desktop dragging</source>
