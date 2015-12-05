@@ -16,6 +16,14 @@
 				<source>General Settings</source>
 			</trans-unit>
 
+			<trans-unit id="data" xml:space="preserve">
+				<source>Slide Data</source>
+			</trans-unit>
+
+			<trans-unit id="caption" xml:space="preserve">
+				<source>Use Slider Caption</source>
+			</trans-unit>
+
             <trans-unit id="accessibility" xml:space="preserve">
 				<source>accessibility: Enables tabbing and arrow key navigation</source>
 			</trans-unit>
