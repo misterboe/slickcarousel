@@ -12,6 +12,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "slick-carousel": "~1.5.9"
+    "slick-carousel": "~1.5.9",
+    "animatewithsass": "~3.2.2"
   }
 }
