@@ -45,5 +45,9 @@ tt_content.slickcarousel {
     }
     dataProcessing {
         10 = Bo\Slickcarousel\DataProcessing\FlexFormProcessor
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = slickdefault
+        }
     }
 }

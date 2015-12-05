@@ -1,22 +1,21 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
 	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
-	 xmlns:bo="http://typo3.org/ns/Bo/Slickcarousel/ViewHelpers"
 	 data-namespace-typo3-fluid="true">
 
 	<f:layout name="Default" />
 
 	<f:section name="Main">
+
 		<div class="slick-slider slick-default" id="slick-id{data.uid}">
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/1"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/2"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/3"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/4"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/5"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/6"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/7"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/8"></div>
-			<div><img class="img-responsive" src="http://lorempixel.com/1140/500/city/9"></div>
+			<f:for each="{files}" as="file" iteration="i">
+				<div>
+					<img data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" src="{f:uri.image(image: file, maxWidth: 100)}" />
+				</div>
+				<f:comment>
+					<v:media.image class="img-responsive" src="{f:uri.image(image: file)}" srcsetDefault="1200" srcset="480,768,992,1200" title="{file.title}" alt="{file.alternative}" />
+				</f:comment>
+			</f:for>
 		</div>
 		<f:render partial="AssetAll" section="JS-Responsive" arguments="{_all}" />
 	</f:section>
