@@ -10,11 +10,8 @@
 		<div class="slick-slider slick-default" id="slick-id{data.uid}">
 			<f:for each="{files}" as="file" iteration="i">
 				<div>
-					<img data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" src="{f:uri.image(image: file, maxWidth: 100)}" />
+					<img data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
 				</div>
-				<f:comment>
-					<v:media.image class="img-responsive" src="{f:uri.image(image: file)}" srcsetDefault="1200" srcset="480,768,992,1200" title="{file.title}" alt="{file.alternative}" />
-				</f:comment>
 			</f:for>
 		</div>
 		<f:render partial="AssetAll" section="JS-Responsive" arguments="{_all}" />

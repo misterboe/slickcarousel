@@ -3,7 +3,7 @@
 $slick_default_fields = array(
     'slickdefault' => array(
         'exclude' => 0,
-        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides',
+        'label' => 'Sick Slides',
         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
             'slickdefault',
             array(
@@ -17,8 +17,8 @@ $slick_default_fields = array(
                     ),
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => array(
                         'showitem' => '
-    										--palette--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:data,imageoverlayPalette,
-    										--palette--;;slickdefault'
+    										--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+    										--palette--;;filePalette'
                     ),
                 )
             ),
