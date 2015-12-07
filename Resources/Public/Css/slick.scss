@@ -1,0 +1,37 @@
+$slick-arrow-color: #000 !default;
+$transparentbg: rgba(0, 0, 0, .5);
+
+@import "../bower_components/animatewithsass/properties";
+@import "../bower_components/animatewithsass/_fading-entrances/fadeInUp";
+@import "../bower_components/animatewithsass/_fading-exits/fadeOutDown";
+@import "../bower_components/animatewithsass/_fading-entrances/fadeIn";
+
+@import "../bower_components/slick-carousel/slick/slick";
+@import "../bower_components/slick-carousel/slick/slick-theme";
+
+.slick-slider {
+  figure {
+    position: relative;
+
+    figcaption {
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      opacity: 0;
+      bottom: 0;
+      background: $transparentbg;
+      padding: 1vh;
+      position: absolute;
+      width: 100%;
+    }
+  }
+  .slick-current{
+    figcaption{
+      @include fadeIn($delay: .5s);
+    }
+  }
+
+  .slick-img {
+    max-width: 100%;
+  }
+}

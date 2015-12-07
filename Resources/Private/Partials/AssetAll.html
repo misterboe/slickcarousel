@@ -1,0 +1,88 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	 xmlns:bo="http://typo3.org/ns/Bo/Slickcarousel/ViewHelpers"
+	 data-namespace-typo3-fluid="true">
+
+	<f:section name="JS-Responsive">
+		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
+			$(document).ready(function () {
+				$('#slick-id{data.uid}').slick({
+					accessibility: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.accessibility)}</f:format.raw>,
+					autoplay: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.autoplay)}</f:format.raw>,
+					autoplaySpeed: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
+					centerMode: <f:format.raw>{data.pi_flexform.centerMode}</f:format.raw>,
+					centerPadding: '<f:format.raw>{data.pi_flexform.centerPadding}</f:format.raw>',
+					cssEase: '<f:format.raw>{data.pi_flexform.cssEase}</f:format.raw>',
+					dots: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.dots)}</f:format.raw>,
+					dotsClass: '<f:format.raw>{data.pi_flexform.dotsClass}</f:format.raw>',
+					draggable: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.draggable)}</f:format.raw>,
+					easing: '<f:format.raw>{data.pi_flexform.easing}</f:format.raw>',
+					edgeFriction: <f:format.raw>{data.pi_flexform.edgeFriction}</f:format.raw>,
+					fade: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.fade)}</f:format.raw>,
+					mobileFirst: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.mobileFirst)}</f:format.raw>,
+					infinite: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.infinite)}</f:format.raw>,
+					initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>,
+					lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>',
+					pauseOnHover: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.pauseOnHover)}</f:format.raw>,
+					pauseOnDotsHover: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.pauseOnDotsHover)}</f:format.raw>,
+					respondTo: '<f:format.raw>{data.pi_flexform.respondTo}</f:format.raw>',
+					speed: <f:format.raw>{data.pi_flexform.speed}</f:format.raw>,
+					swipe: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.swipe)}</f:format.raw>,
+					swipeToSlide: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.swipeToSlide)}</f:format.raw>,
+					touchMove: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.touchMove)}</f:format.raw>,
+					useCSS: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.useCSS)}</f:format.raw>,
+					variableWidth: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.variableWidth)}</f:format.raw>,
+					vertical: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.vertical)}</f:format.raw>,
+					verticalSwiping: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.verticalSwiping)}</f:format.raw>,
+					rtl: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.rtl)}</f:format.raw>,
+					waitForAnimate: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.waitForAnimate)}</f:format.raw>,
+					zIndex: <f:format.raw>{data.pi_flexform.zIndex}</f:format.raw>,
+					responsive: [
+						{
+							breakpoint: 1170,
+							settings: {
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-lg}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-lg}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-lg}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-lg}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-lg)}</f:format.raw>,
+							}
+						},
+						
+						{
+							breakpoint: 970,
+							settings: {
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-md}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-md}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-md}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-md}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-md)}</f:format.raw>,
+							}
+						},
+						{
+							breakpoint: 750,
+							settings: {
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-sm}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-sm}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-sm}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-sm}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-sm)}</f:format.raw>,
+							}
+						},
+						{
+							breakpoint: 0,
+							settings: {
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-xs}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-xs}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-xs}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-xs}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-xs)}</f:format.raw>,
+							}
+						}
+					]
+				});
+			});
+		</v:asset.script>
+	</f:section>
+</div>

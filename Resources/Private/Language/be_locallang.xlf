@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-11-02T17:54:12Z" product-name="lang">
+        <header/>
+        <body>
+
+			<trans-unit id="slides" xml:space="preserve">
+				<source>Slick Slides</source>
+			</trans-unit>
+
+            <trans-unit id="settings" xml:space="preserve">
+				<source>Slick Settings</source>
+			</trans-unit>
+
+            <trans-unit id="general" xml:space="preserve">
+				<source>General Settings</source>
+			</trans-unit>
+
+			<trans-unit id="data" xml:space="preserve">
+				<source>Slide Data</source>
+			</trans-unit>
+
+			<trans-unit id="caption" xml:space="preserve">
+				<source>Use Slider Caption</source>
+			</trans-unit>
+
+            <trans-unit id="accessibility" xml:space="preserve">
+				<source>accessibility: Enables tabbing and arrow key navigation</source>
+			</trans-unit>
+            <trans-unit id="autoplay" xml:space="preserve">
+				<source>autoplay: Enables auto play of slides</source>
+			</trans-unit>
+            <trans-unit id="autoplaySpeed" xml:space="preserve">
+				<source>autoplaySpeed: Auto play change interval</source>
+			</trans-unit>
+            <trans-unit id="centerMode" xml:space="preserve">
+				<source>centerMode: Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
+			</trans-unit>
+            <trans-unit id="centerPadding" xml:space="preserve">
+				<source>centerPadding: Side padding when in center mode. (px or %)</source>
+			</trans-unit>
+            <trans-unit id="cssEase" xml:space="preserve">
+				<source>cssEase: CSS3 easing</source>
+			</trans-unit>
+            <trans-unit id="dots" xml:space="preserve">
+				<source>dots: Current slide indicator dots</source>
+			</trans-unit>
+            <trans-unit id="dotsClass" xml:space="preserve">
+				<source>dotsClass: Class for slide indicator dots container</source>
+			</trans-unit>
+            <trans-unit id="draggable" xml:space="preserve">
+				<source>Enables desktop dragging</source>
+			</trans-unit>
+            <trans-unit id="easing" xml:space="preserve">
+				<source>animate() fallback easing</source>
+			</trans-unit>
+            <trans-unit id="edgeFriction" xml:space="preserve">
+				<source>Resistance when swiping edges of non-infinite carousels</source>
+			</trans-unit>
+            <trans-unit id="fade" xml:space="preserve">
+				<source>Enables fade</source>
+			</trans-unit>
+			<trans-unit id="mobileFirst" xml:space="preserve">
+				<source>mobileFirst: Responsive settings use mobile first calculation</source>
+			</trans-unit>
+			<trans-unit id="infinite" xml:space="preserve">
+				<source>infinite: Infinite looping</source>
+			</trans-unit>
+			<trans-unit id="initialSlide" xml:space="preserve">
+				<source>initialSlide: Slide to start on</source>
+			</trans-unit>
+			<trans-unit id="lazyLoad" xml:space="preserve">
+				<source>lazyLoad: Accepts 'ondemand' or 'progressive' for lazy load technique</source>
+			</trans-unit>
+			<trans-unit id="pauseOnHover" xml:space="preserve">
+				<source>pauseOnHover: Pauses autoplay on hover</source>
+			</trans-unit>
+			<trans-unit id="pauseOnDotsHover" xml:space="preserve">
+				<source>pauseOnDotsHover: Pauses autoplay when a dot is hovered</source>
+			</trans-unit>
+			<trans-unit id="respondTo" xml:space="preserve">
+				<source>respondTo: Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two).</source>
+			</trans-unit>
+			<trans-unit id="speed" xml:space="preserve">
+				<source>speed: Transition speed</source>
+			</trans-unit>
+			<trans-unit id="swipe" xml:space="preserve">
+				<source>swipe: Enables touch swipe</source>
+			</trans-unit>
+			<trans-unit id="swipeToSlide" xml:space="preserve">
+				<source>swipeToSlide: Swipe to slide irrespective of slidesToScroll</source>
+			</trans-unit>
+			<trans-unit id="touchMove" xml:space="preserve">
+				<source>touchMove: Enables slide moving with touch</source>
+			</trans-unit>
+			<trans-unit id="useCSS" xml:space="preserve">
+				<source>useCSS: Enable/Disable CSS Transitions</source>
+			</trans-unit>
+			<trans-unit id="variableWidth" xml:space="preserve">
+				<source>variableWidth: Disables automatic slide width calculation</source>
+			</trans-unit>
+			<trans-unit id="vertical" xml:space="preserve">
+				<source>vertical: Vertical slide direction</source>
+			</trans-unit>
+			<trans-unit id="verticalSwiping" xml:space="preserve">
+				<source>verticalSwiping: Changes swipe direction to vertical</source>
+			</trans-unit>
+			<trans-unit id="rtl" xml:space="preserve">
+				<source>rtl: Change the slider's direction to become right-to-left</source>
+			</trans-unit>
+			<trans-unit id="waitForAnimate" xml:space="preserve">
+				<source>waitForAnimate: Ignores requests to advance the slide while animating</source>
+			</trans-unit>
+			<trans-unit id="zIndex" xml:space="preserve">
+				<source>zIndex: Set the zIndex values for slides, useful for IE9 and lower</source>
+			</trans-unit>
+
+			<trans-unit id="xs" xml:space="preserve">
+				<source>Extra small devices Phones (≤768px)</source>
+			</trans-unit>
+			<trans-unit id="sm" xml:space="preserve">
+				<source>Small devices Tablets (≥768px)</source>
+			</trans-unit>
+			<trans-unit id="md" xml:space="preserve">
+				<source>Medium devices Desktops (≥992px)</source>
+			</trans-unit>
+			<trans-unit id="lg" xml:space="preserve">
+				<source>Large devices Desktops (≥1200px)</source>
+			</trans-unit>
+
+			<trans-unit id="slidesToShow" xml:space="preserve">
+				<source>slidesToShow: # of slides to show at a time</source>
+			</trans-unit>
+			<trans-unit id="slidesToScroll" xml:space="preserve">
+				<source>slidesToScroll: # of slides to scroll at a time</source>
+			</trans-unit>
+			<trans-unit id="rows" xml:space="preserve">
+				<source>rows: Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
+			</trans-unit>
+			<trans-unit id="slidesPerRow" xml:space="preserve">
+				<source>slidesPerRow: With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
+			</trans-unit>
+			<trans-unit id="arrows" xml:space="preserve">
+				<source>arrows: Enable Next/Prev arrows</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>
