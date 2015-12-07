@@ -1,5 +1,4 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
 	 data-namespace-typo3-fluid="true">
 
@@ -8,20 +7,16 @@
 	<f:section name="Main">
 
 		<div class="slick-slider slick-default" id="slick-id{data.uid}">
-			<v:resource.record.fal table="tt_content" field="slickdefault" as="slickimages" uid="{data.uid}">
-				<f:for each="{slickimages}" as="file" iteration="i">
-					<div class="slick-item">
-						<figure>
-							<img class="slick-img" data-lazy="{f:uri.image(src: file.url, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
-							<f:if condition="{file.description}">
-								<f:if condition="{file.usecaption}">
-									<figcaption>{file.description}</figcaption>
-								</f:if>
-							</f:if>
-						</figure>
-					</div>
-				</f:for>
-			</v:resource.record.fal>
+			<f:for each="{slickimages}" as="file" iteration="i">
+				<div class="slick-item">
+					<figure>
+						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
+						<f:if condition="{file.description}">
+							<figcaption>{file.description}</figcaption>
+						</f:if>
+					</figure>
+				</div>
+			</f:for>
 		</div>
 		<f:render partial="AssetAll" section="JS-Responsive" arguments="{_all}" />
 	</f:section>

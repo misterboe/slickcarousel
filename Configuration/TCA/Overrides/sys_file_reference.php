@@ -14,6 +14,8 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config'] = array(
     ),
 );
 
+// Actually unused
+
 $GLOBALS['TCA']['sys_file_reference']['interface']['showRecordFieldList'] .= ',usecaption';
 
 $tmp_sys_file_reference = array(
