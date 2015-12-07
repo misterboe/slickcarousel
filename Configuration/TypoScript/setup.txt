@@ -48,6 +48,7 @@ tt_content.slickcarousel {
         20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         20 {
             references.fieldName = slickdefault
+            as = slickimages
         }
     }
 }

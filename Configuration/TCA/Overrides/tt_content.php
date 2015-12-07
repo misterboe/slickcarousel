@@ -1,5 +1,7 @@
 <?php
 
+$GLOBALS['TCA']['sys_file_reference']['interface']['showRecordFieldList'] .= ',usecaption';
+
 $tmp_sys_file_reference = array(
     'usecaption' => array(
         'exclude' => 0,
@@ -13,7 +15,7 @@ $tmp_sys_file_reference = array(
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', $tmp_sys_file_reference);
 
-$GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = array(
+$GLOBALS['TCA']['sys_file_reference']['palettes']['slickslider'] = array(
     'showitem' => '
             usecaption,
             --linebreak--,
@@ -24,6 +26,7 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = array
             crop
     '
 );
+
 
 // ************************************************
 // * Backup all default cTypes add new and resort *
