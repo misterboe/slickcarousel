@@ -1,33 +1,5 @@
 <?php
 
-$GLOBALS['TCA']['sys_file_reference']['interface']['showRecordFieldList'] .= ',usecaption';
-
-$tmp_sys_file_reference = array(
-    'usecaption' => array(
-        'exclude' => 0,
-        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:caption',
-        'config' => array(
-            'type' => 'check',
-            'default' => '1'
-        ),
-    ),
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', $tmp_sys_file_reference);
-
-$GLOBALS['TCA']['sys_file_reference']['palettes']['slickslider'] = array(
-    'showitem' => '
-            usecaption,
-            --linebreak--,
-            title,alternative,
-            --linebreak--,
-            link,description,
-            --linebreak--,
-            crop
-    '
-);
-
-
 // ************************************************
 // * Backup all default cTypes add new and resort *
 // ************************************************
