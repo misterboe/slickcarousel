@@ -11,7 +11,14 @@
 			<v:resource.record.fal table="tt_content" field="slickdefault" as="slickimages" uid="{data.uid}">
 				<f:for each="{slickimages}" as="file" iteration="i">
 					<div class="slick-item">
-						<img class="slick-img" data-lazy="{f:uri.image(src: file.url, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
+						<figure>
+							<img class="slick-img" data-lazy="{f:uri.image(src: file.url, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
+							<f:if condition="{file.description}">
+								<f:if condition="{file.usecaption}">
+									<figcaption>{file.description}</figcaption>
+								</f:if>
+							</f:if>
+						</figure>
 					</div>
 				</f:for>
 			</v:resource.record.fal>
