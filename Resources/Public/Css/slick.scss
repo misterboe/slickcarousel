@@ -3,3 +3,7 @@ $slick-arrow-color: black !default;
 @import "../bower_components/animatewithsass/_properties.scss";
 @import "../bower_components/slick-carousel/slick/slick";
 @import "../bower_components/slick-carousel/slick/slick-theme";
+
+.slick-img{
+  max-width: 100%;
+}
