@@ -52,3 +52,27 @@ tt_content.slickcarousel {
         }
     }
 }
+
+tt_content.slickcarouselbasic = FLUIDTEMPLATE
+tt_content.slickcarouselbasic {
+    templateName = Slickcarouselbasic
+    templateRootPaths {
+        10 = EXT:slickcarousel/Resources/Private/Templates/
+    }
+
+    partialRootPaths {
+        10 = EXT:slickcarousel/Resources/Private/Partials/
+    }
+
+    layoutRootPaths {
+        10 = EXT:slickcarousel/Resources/Private/Layouts/
+    }
+    dataProcessing {
+        10 = Bo\Slickcarousel\DataProcessing\FlexFormProcessor
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = slickdefault
+            as = slickimages
+        }
+    }
+}

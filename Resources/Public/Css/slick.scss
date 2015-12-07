@@ -14,10 +14,13 @@ $transparentbg: rgba(0, 0, 0, .5);
     position: relative;
 
     figcaption {
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
       opacity: 0;
       bottom: 0;
       background: $transparentbg;
-      padding: 2vh;
+      padding: 1vh;
       position: absolute;
       width: 100%;
     }

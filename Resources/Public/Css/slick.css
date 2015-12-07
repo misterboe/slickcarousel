@@ -381,10 +381,13 @@
 .slick-slider figure {
   position: relative; }
   .slick-slider figure figcaption {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
     opacity: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    padding: 2vh;
+    padding: 1vh;
     position: absolute;
     width: 100%; }
 .slick-slider .slick-current figcaption {

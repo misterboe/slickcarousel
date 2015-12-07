@@ -52,7 +52,7 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel',
+    'Slick Carousel - Expert',
     'slickcarousel',
     'EXT:slickcarousel/ext_icon.gif'
 );

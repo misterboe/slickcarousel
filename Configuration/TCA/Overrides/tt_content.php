@@ -14,6 +14,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'] = array(
 );
 
 include('CE/slickcarousel.php');
+include('CE/slickcarouselbasic.php');
 
 foreach ($backupCTypeItems as $key => $value) {
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = $value;

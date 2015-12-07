@@ -4,9 +4,17 @@ mod.wizards {
             slick {
                 header = Slick
                 elements {
+                    slickcarouselbasic {
+                        icon = EXT:slickcarousel/ext_icon.gif
+                        title = slick - Basic
+                        description = One Slide with default Settings
+                        tt_content_defValues {
+                            CType = slickcarouselbasic
+                        }
+                    }
                     slickcarousel {
                         icon = EXT:slickcarousel/ext_icon.gif
-                        title = slick
+                        title = slick - Expert
                         description = the last carousel you'll ever need
                         tt_content_defValues {
                             CType = slickcarousel
@@ -14,7 +22,7 @@ mod.wizards {
                     }
                 }
             }
-            slick.show := addToList(slickcarousel)
+            slick.show := addToList(slickcarouselbasic, slickcarousel)
         }
     }
 }
