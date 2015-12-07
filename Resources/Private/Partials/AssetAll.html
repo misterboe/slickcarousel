@@ -5,8 +5,6 @@
 	 data-namespace-typo3-fluid="true">
 
 	<f:section name="JS-Responsive">
-		<h1></h1>
-
 		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
 			$(document).ready(function () {
 				$('#slick-id{data.uid}').slick({
@@ -44,41 +42,42 @@
 						{
 							breakpoint: 1170,
 							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								rows: 1,
-								slidesPerRow: 1,
-								arrows: true,
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-lg}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-lg}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-lg}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-lg}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-lg)}</f:format.raw>,
 							}
 						},
+						
 						{
 							breakpoint: 970,
 							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								rows: 1,
-								slidesPerRow: 1,
-								arrows: true,
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-md}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-md}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-md}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-md}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-md)}</f:format.raw>,
 							}
 						},
 						{
 							breakpoint: 750,
 							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								rows: 1,
-								slidesPerRow: 1,
-								arrows: true,
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-sm}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-sm}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-sm}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-sm}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-sm)}</f:format.raw>,
 							}
 						},
 						{
 							breakpoint: 0,
 							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								rows: 1,
-								slidesPerRow: 1,
-								arrows: true,
+								slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow-xs}</f:format.raw>,
+								slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll-xs}</f:format.raw>,
+								rows: <f:format.raw>{data.pi_flexform.rows-xs}</f:format.raw>,
+								slidesPerRow: <f:format.raw>{data.pi_flexform.slidesPerRow-xs}</f:format.raw>,
+								arrows: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.arrows-xs)}</f:format.raw>,
 							}
 						}
 					]
