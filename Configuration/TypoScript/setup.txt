@@ -24,7 +24,6 @@
         concatenateJs = 0
         concatenateJsAndCss = 0
         inlineStyle2TempFile = 0
-        no_cache = 1
     }
 [end]
 
