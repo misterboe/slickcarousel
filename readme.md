@@ -9,7 +9,7 @@
 * Very easy to use
 * Supports image crop
 
-![image](http://snag.gy/XWpsr.jpg)
+![image](http://snag.gy/qwwSp.jpg)
 ![image](http://snag.gy/FsWNa.jpg)
 
 ## slick - Expert
@@ -18,7 +18,7 @@
 * Supports image crop
 * Responsive settings
 
-![image](http://snag.gy/XWpsr.jpg)
+![image](http://snag.gy/qwwSp.jpg)
 ![image](http://snag.gy/NI3lB.jpg)
 ![image](http://snag.gy/TRror.jpg)
 
