@@ -2,19 +2,15 @@
   "name": "bo/slickcarousel",
   "description": "Slick carousel for Typo3",
   "type": "typo3-cms-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "require": {
-    "typo3/cms": ">=7.6.0,<8.0",
-    "fluidtypo3/vhs": "^2.3.3"
-  },
-  "require-dev": {
     "typo3/cms": ">=7.6.0,<8.0",
     "fluidtypo3/vhs": "^2.4.0"
   },
   "authors": [
     {
       "name": "Boris Schauer",
-      "email": "schauer@analog.de"
+      "email": "me@bschauer.de"
     }
   ],
   "autoload": {
