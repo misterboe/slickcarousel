@@ -12,6 +12,7 @@ mod.wizards {
                             CType = slickcarouselbasic
                         }
                     }
+
                     slickcarousel {
                         icon = EXT:slickcarousel/ext_icon.gif
                         title = slick - Expert
@@ -22,6 +23,7 @@ mod.wizards {
                     }
                 }
             }
+
             slick.show := addToList(slickcarouselbasic, slickcarousel)
         }
     }
