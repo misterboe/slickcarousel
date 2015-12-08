@@ -2,7 +2,7 @@
 
 ### this is a typo3 (7LTS) extenions of the slick carousel 
 
-![image](http://snag.gy/y2LpK.jpg)
+![image](http://snag.gy/jsI2I.jpg)
 
 ## slick - Basic
 * Description (Caption) is shown in frontend
