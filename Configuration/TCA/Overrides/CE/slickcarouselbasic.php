@@ -18,9 +18,6 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
     '
 );
 
-$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarousel'] =
-    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-basic.xml';
-
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'Slick Carousel - Basic',
     'slickcarouselbasic',

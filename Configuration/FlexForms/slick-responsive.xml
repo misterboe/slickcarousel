@@ -169,8 +169,11 @@
                         <TCEforms type="array">
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:lazyLoad</label>
                             <config type="array">
-                                <type>input</type>
-                                <size>2</size>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array"><numIndex index="0">ondemand</numIndex><numIndex index="1">ondemand</numIndex></numIndex>
+                                    <numIndex index="1" type="array"><numIndex index="0">progressive</numIndex><numIndex index="1">progressive</numIndex></numIndex>
+                                </items>
                                 <default>ondemand</default>
                             </config>
                         </TCEforms>
@@ -199,8 +202,12 @@
                         <TCEforms type="array">
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:respondTo</label>
                             <config type="array">
-                                <type>input</type>
-                                <size>1</size>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array"><numIndex index="0">window</numIndex><numIndex index="1">window</numIndex></numIndex>
+                                    <numIndex index="1" type="array"><numIndex index="0">slider</numIndex><numIndex index="1">slider</numIndex></numIndex>
+                                    <numIndex index="2" type="array"><numIndex index="0">min</numIndex><numIndex index="1">min</numIndex></numIndex>
+                                </items>
                                 <default>window</default>
                             </config>
                         </TCEforms>
