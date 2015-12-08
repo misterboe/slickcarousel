@@ -1,0 +1,27 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	 data-namespace-typo3-fluid="true">
+
+	<f:section name="Sync">
+		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
+			$(document).ready(function () {
+				$('#slick-id{data.uid}-main').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					fade: true,
+					asNavFor: '<f:format.raw>#slick-id{data.uid}-nav</f:format.raw>'
+				});
+				$('#slick-id{data.uid}-nav').slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					asNavFor: '<f:format.raw>#slick-id{data.uid}-main</f:format.raw>',
+					dots: true,
+					centerMode: true,
+					focusOnSelect: true
+				});
+			});
+		</v:asset.script>
+	</f:section>
+</div>

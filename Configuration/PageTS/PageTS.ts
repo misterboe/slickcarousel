@@ -13,6 +13,15 @@ mod.wizards {
                         }
                     }
 
+                    slickcarouselsync {
+                        icon = EXT:slickcarousel/ext_icon.gif
+                        title = slick - Synced
+                        description = Two Sliders synced
+                        tt_content_defValues {
+                            CType = slickcarouselsync
+                        }
+                    }
+
                     slickcarousel {
                         icon = EXT:slickcarousel/ext_icon.gif
                         title = slick - Expert
@@ -24,7 +33,7 @@ mod.wizards {
                 }
             }
 
-            slick.show := addToList(slickcarouselbasic, slickcarousel)
+            slick.show := addToList(slickcarouselbasic, slickcarouselsync, slickcarousel)
         }
     }
 }
