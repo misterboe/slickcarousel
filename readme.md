@@ -22,11 +22,19 @@
 ![image](http://snag.gy/NI3lB.jpg)
 ![image](http://snag.gy/TRror.jpg)
 
+## How to disable different slick types
+
+### Page TS
+```
+TCEFORM.tt_content.CType {
+    removeItems = slickcarousel,slickcarouselbasic
+}
+```
+
 ## News features by Versions:
 
-## Version: 0.0.3
-* Image crop ratios "slick - wide" and "slick - 3:2"
-
-## Version: 0.0.1
-* First release with two carousel types
-* More Settings and Slider options will follow
+* Version: 0.0.3
+	* Image crop ratios "slick - wide" and "slick - 3:2"
+* Version: 0.0.1
+	* First release with two carousel types
+	* More Settings and Slider options will follow
