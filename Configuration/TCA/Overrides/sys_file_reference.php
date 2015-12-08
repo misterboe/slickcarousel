@@ -4,15 +4,8 @@ if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
-$GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config'] = [
-    'type' => 'imageManipulation',
-    'ratios' => [
-        '1.7777777777777777' => 'LLL:EXT:lang/locallang_wizards.xlf:imwizard.ratio.16_9',
-        '1.3333333333333333' => 'LLL:EXT:lang/locallang_wizards.xlf:imwizard.ratio.4_3',
-        '1' => 'LLL:EXT:lang/locallang_wizards.xlf:imwizard.ratio.1_1',
-        'NaN' => 'LLL:EXT:lang/locallang_wizards.xlf:imwizard.ratio.free',
-    ],
-];
+$GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config']['ratios']['3.5']  = 'slick - wide';
+$GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config']['ratios']['1.5']  = 'slick - 3:2';
 
 // Actually unused
 
