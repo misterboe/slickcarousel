@@ -24,7 +24,6 @@
         concatenateJs = 0
         concatenateJsAndCss = 0
         inlineStyle2TempFile = 0
-        no_cache = 1
     }
 [end]
 
@@ -43,6 +42,7 @@ tt_content.slickcarousel {
     layoutRootPaths {
         10 = EXT:slickcarousel/Resources/Private/Layouts/
     }
+
     dataProcessing {
         10 = Bo\Slickcarousel\DataProcessing\FlexFormProcessor
         20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -67,6 +67,7 @@ tt_content.slickcarouselbasic {
     layoutRootPaths {
         10 = EXT:slickcarousel/Resources/Private/Layouts/
     }
+
     dataProcessing {
         10 = Bo\Slickcarousel\DataProcessing\FlexFormProcessor
         20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
