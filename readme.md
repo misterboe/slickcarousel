@@ -2,15 +2,15 @@
 
 ### this is a typo3 (7LTS) extenions of the slick carousel 
 
-![image](http://snag.gy/jsI2I.jpg =400x)
+<img src="http://snag.gy/jsI2I.jpg" alt="alt text" style="width:400px;height:auto">
 
 ## slick - Basic
 * Description (Caption) is shown in frontend
 * Very easy to use
 * Supports image crop
 
-![image](http://snag.gy/qwwSp.jpg =600x)
-![image](http://snag.gy/FsWNa.jpg =600x)
+<img src="http://snag.gy/qwwSp.jpg" alt="alt text" style="width:600px;height:auto">
+<img src="http://snag.gy/FsWNa.jpg" alt="alt text" style="width:600px;height:auto">
 
 ## slick - Synced
 * Description (Caption) is shown in frontend on the upper slide
@@ -18,8 +18,7 @@
 * Supports image crop
 * Two syncronized slider (Gallery like)
 
-![image](http://snag.gy/drzTv.jpg =600x)
-
+<img src="http://snag.gy/drzTv.jpg" alt="alt text" style="width:600px;height:auto">
 
 ## slick - Expert
 * Description (Caption) is shown in frontend
@@ -27,9 +26,9 @@
 * Supports image crop
 * Responsive settings
 
-![image](http://snag.gy/qwwSp.jpg =600x)
-![image](http://snag.gy/NI3lB.jpg =600x)
-![image](http://snag.gy/TRror.jpg =600x)
+<img src="http://snag.gy/qwwSp.jpg" alt="alt text" style="width:600px;height:auto">
+<img src="http://snag.gy/NI3lB.jpg" alt="alt text" style="width:600px;height:auto">
+<img src="http://snag.gy/TRror.jpg" alt="alt text" style="width:600px;height:auto">
 
 ## How to disable different slick types
 
