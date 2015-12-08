@@ -1,0 +1,35 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	 data-namespace-typo3-fluid="true">
+
+	<f:layout name="Default" />
+
+	<f:section name="Main">
+
+		<div class="slick-slider slick-default" id="slick-id{data.uid}-main">
+			<f:for each="{slickimages}" as="file" iteration="i">
+				<div class="slick-item">
+					<figure>
+						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
+						<f:if condition="{file.description}">
+							<figcaption>{file.description}</figcaption>
+						</f:if>
+					</figure>
+				</div>
+			</f:for>
+		</div>
+		<div class="slick-slider slick-default" id="slick-id{data.uid}-nav">
+			<f:for each="{slickimages}" as="file" iteration="i">
+				<div class="slick-item">
+					<figure>
+						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
+						<f:if condition="{file.description}">
+							<figcaption>{file.description}</figcaption>
+						</f:if>
+					</figure>
+				</div>
+			</f:for>
+		</div>
+		<f:render partial="AssetSync" section="Sync" arguments="{_all}" />
+	</f:section>
+</div>
