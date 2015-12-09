@@ -36,11 +36,11 @@
 ### Page TS
 ```
 TCEFORM.tt_content.CType {
-    removeItems = slickcarousel,slickcarouselbasic
+    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync
 }
 ```
 
-## News features by Versions:
+## Changelog:
 * Version: 0.0.4
 	* slick - Synced > Can be configured in Backend now
 * Version: 0.0.3
