@@ -98,15 +98,6 @@
                             </config>
                         </TCEforms>
                     </draggable>
-                    <draggable type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:draggable</label>
-                            <config type="array">
-                                <type>check</type>
-                                <default>1</default>
-                            </config>
-                        </TCEforms>
-                    </draggable>
                     <easing type="array">
                         <TCEforms type="array">
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:easing</label>
