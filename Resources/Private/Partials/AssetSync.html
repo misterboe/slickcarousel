@@ -11,15 +11,26 @@
 					slidesToScroll: 1,
 					arrows: false,
 					fade: true,
+					lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>',
 					asNavFor: '<f:format.raw>#slick-id{data.uid}-nav</f:format.raw>'
 				});
 				$('#slick-id{data.uid}-nav').slick({
-					slidesToShow: 3,
-					slidesToScroll: 1,
+					dots: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.dots)}</f:format.raw>,
+					slidesToShow: <f:format.raw>{data.pi_flexform.slidesToShow}</f:format.raw>,
+					slidesToScroll: <f:format.raw>{data.pi_flexform.slidesToScroll}</f:format.raw>,
+					swipe: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.swipe)}</f:format.raw>,
+					swipeToSlide: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.swipeToSlide)}</f:format.raw>,
+					touchMove: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.touchMove)}</f:format.raw>,
 					asNavFor: '<f:format.raw>#slick-id{data.uid}-main</f:format.raw>',
-					dots: true,
-					centerMode: true,
-					focusOnSelect: true
+					centerMode: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.centerMode)}</f:format.raw>,
+					centerPadding: '<f:format.raw>{data.pi_flexform.centerPadding}</f:format.raw>',
+					focusOnSelect: true,
+					autoplay: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.autoplay)}</f:format.raw>,
+					autoplaySpeed: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
+					draggable: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.draggable)}</f:format.raw>,
+					infinite: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.infinite)}</f:format.raw>,
+					lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>',
+					waitForAnimate: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.waitForAnimate)}</f:format.raw>
 				});
 			});
 		</v:asset.script>
