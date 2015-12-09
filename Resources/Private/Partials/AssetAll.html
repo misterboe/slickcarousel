@@ -11,7 +11,7 @@
 					accessibility: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.accessibility)}</f:format.raw>,
 					autoplay: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.autoplay)}</f:format.raw>,
 					autoplaySpeed: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
-					centerMode: <f:format.raw>{data.pi_flexform.centerMode}</f:format.raw>,
+					centerMode: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.centerMode)}</f:format.raw>,
 					centerPadding: '<f:format.raw>{data.pi_flexform.centerPadding}</f:format.raw>',
 					cssEase: '<f:format.raw>{data.pi_flexform.cssEase}</f:format.raw>',
 					dots: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.dots)}</f:format.raw>,
