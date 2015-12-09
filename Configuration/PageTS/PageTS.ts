@@ -2,12 +2,12 @@ mod.wizards {
     newContentElement {
         wizardItems {
             slick {
-                header = Slick
+                header = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickwizardheader
                 elements {
                     slickcarouselbasic {
                         icon = EXT:slickcarousel/ext_icon.gif
-                        title = slick - Basic
-                        description = One Slide with default Settings
+                        title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title
+                        description =  LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.description
                         tt_content_defValues {
                             CType = slickcarouselbasic
                         }
@@ -15,8 +15,8 @@ mod.wizards {
 
                     slickcarouselsync {
                         icon = EXT:slickcarousel/ext_icon.gif
-                        title = slick - Synced
-                        description = Two Sliders synced
+                        title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title
+                        description = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.description
                         tt_content_defValues {
                             CType = slickcarouselsync
                         }
@@ -24,8 +24,8 @@ mod.wizards {
 
                     slickcarousel {
                         icon = EXT:slickcarousel/ext_icon.gif
-                        title = slick - Expert
-                        description = the last carousel you'll ever need
+                        title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title
+                        description = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.description
                         tt_content_defValues {
                             CType = slickcarousel
                         }

@@ -3,27 +3,42 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2013-11-02T17:54:12Z" product-name="lang">
         <header/>
         <body>
-
+			<trans-unit id="slickwizardheader" xml:space="preserve">
+				<source>Slick Carousel</source>
+			</trans-unit>
+			<trans-unit id="slickcarouselbasic.title" xml:space="preserve">
+				<source>Slick - Basic</source>
+			</trans-unit>
+			<trans-unit id="slickcarouselbasic.description" xml:space="preserve">
+				<source>One Slide with default Settings</source>
+			</trans-unit>
+			<trans-unit id="slickcarouselsync.title" xml:space="preserve">
+				<source>Slick - Synced</source>
+			</trans-unit>
+			<trans-unit id="slickcarouselsync.description" xml:space="preserve">
+				<source>Two Sliders synced</source>
+			</trans-unit>
+			<trans-unit id="slickcarousel.title" xml:space="preserve">
+				<source>Slick - Expert</source>
+			</trans-unit>
+			<trans-unit id="slickcarousel.description" xml:space="preserve">
+				<source>The last carousel you'll ever need</source>
+			</trans-unit>
 			<trans-unit id="slides" xml:space="preserve">
 				<source>Slick Slides</source>
 			</trans-unit>
-
             <trans-unit id="settings" xml:space="preserve">
 				<source>Slick Settings</source>
 			</trans-unit>
-
             <trans-unit id="general" xml:space="preserve">
 				<source>General Settings</source>
 			</trans-unit>
-
 			<trans-unit id="data" xml:space="preserve">
 				<source>Slide Data</source>
 			</trans-unit>
-
 			<trans-unit id="caption" xml:space="preserve">
 				<source>Use Slider Caption</source>
 			</trans-unit>
-
             <trans-unit id="accessibility" xml:space="preserve">
 				<source>accessibility: Enables tabbing and arrow key navigation</source>
 			</trans-unit>
@@ -114,7 +129,6 @@
 			<trans-unit id="zIndex" xml:space="preserve">
 				<source>zIndex: Set the zIndex values for slides, useful for IE9 and lower</source>
 			</trans-unit>
-
 			<trans-unit id="xs" xml:space="preserve">
 				<source>Extra small devices Phones (≤768px)</source>
 			</trans-unit>
@@ -127,7 +141,6 @@
 			<trans-unit id="lg" xml:space="preserve">
 				<source>Large devices Desktops (≥1200px)</source>
 			</trans-unit>
-
 			<trans-unit id="slidesToShow" xml:space="preserve">
 				<source>slidesToShow: # of slides to show at a time</source>
 			</trans-unit>
