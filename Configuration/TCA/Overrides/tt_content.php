@@ -3,7 +3,7 @@
 $slick_default_fields = array(
     'slickdefault' => array(
         'exclude' => 0,
-        'label' => 'Sick Slides',
+        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides',
         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
             'slickdefault',
             array(
@@ -48,7 +48,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'] = array(
 $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,rowDescription,
+		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
 		slickdefault;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides,
 		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -64,7 +64,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
 );
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel - Basic',
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',
     'slickcarouselbasic',
     'EXT:slickcarousel/ext_icon.gif'
 );
@@ -76,8 +76,10 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
 $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync'] = array(
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,rowDescription,
+		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
 		slickdefault;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides,
+		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+		pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 		--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
@@ -91,8 +93,11 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync'] = array(
     '
 );
 
+$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselsync'] =
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-synked.xml';
+
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel - Synced',
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title',
     'slickcarouselsync',
     'EXT:slickcarousel/ext_icon.gif'
 );
@@ -104,7 +109,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
 $GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = array(
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,rowDescription,
+		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
 		slickdefault;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides,
 		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 		pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
@@ -124,7 +129,7 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel - Expert',
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title',
     'slickcarousel',
     'EXT:slickcarousel/ext_icon.gif'
 );
