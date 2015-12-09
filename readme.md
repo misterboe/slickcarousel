@@ -9,8 +9,8 @@
 * Very easy to use
 * Supports image crop
 
-<img src="http://snag.gy/qwwSp.jpg" alt="alt text" style="width:600px;height:auto">
-<img src="http://snag.gy/FsWNa.jpg" alt="alt text" style="width:600px;height:auto">
+![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/FsWNa.jpg)
 
 ## slick - Synced
 * Description (Caption) is shown in frontend on the upper slide
@@ -18,7 +18,8 @@
 * Supports image crop
 * Two syncronized slider (Gallery like)
 
-<img src="http://snag.gy/drzTv.jpg" alt="alt text" style="width:600px;height:auto">
+![image](http://snag.gy/drzTv.jpg)
+![image](http://snag.gy/st65k.jpg)
 
 ## slick - Expert
 * Description (Caption) is shown in frontend
@@ -26,9 +27,9 @@
 * Supports image crop
 * Responsive settings
 
-<img src="http://snag.gy/qwwSp.jpg" alt="alt text" style="width:600px;height:auto">
-<img src="http://snag.gy/NI3lB.jpg" alt="alt text" style="width:600px;height:auto">
-<img src="http://snag.gy/TRror.jpg" alt="alt text" style="width:600px;height:auto">
+![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/NI3lB.jpg)
+![image](http://snag.gy/TRror.jpg)
 
 ## How to disable different slick types
 
@@ -40,6 +41,8 @@ TCEFORM.tt_content.CType {
 ```
 
 ## News features by Versions:
+* Version: 0.0.4
+	* slick - Synced > Can be configured in Backend now
 * Version: 0.0.3
 	* Image crop ratios "slick - wide" and "slick - 3:2"
 	* slick - Synced (Gallery)
