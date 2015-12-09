@@ -3,7 +3,7 @@
 $slick_default_fields = array(
     'slickdefault' => array(
         'exclude' => 0,
-        'label' => 'Sick Slides',
+        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides',
         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
             'slickdefault',
             array(
@@ -64,7 +64,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
 );
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel - Basic',
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',
     'slickcarouselbasic',
     'EXT:slickcarousel/ext_icon.gif'
 );
@@ -92,7 +92,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync'] = array(
 );
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel - Synced',
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title',
     'slickcarouselsync',
     'EXT:slickcarousel/ext_icon.gif'
 );
@@ -124,7 +124,7 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'Slick Carousel - Expert',
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title',
     'slickcarousel',
     'EXT:slickcarousel/ext_icon.gif'
 );
