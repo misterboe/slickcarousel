@@ -10,7 +10,7 @@
 			<f:for each="{slickimages}" as="file" iteration="i">
 				<div class="slick-item">
 					<figure>
-						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1200)}" title="{file.title}" alt="{file.alternative}" />
+						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1980)}" title="{file.title}" alt="{file.alternative}" />
 						<f:if condition="{file.description}">
 							<figcaption>{file.description}</figcaption>
 						</f:if>
