@@ -41,6 +41,9 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.0.5
+	* CSS fixes
+	* Add Grunt task to build CSS file
 * Version: 0.0.4
 	* slick - Synced > Can be configured in Backend now
 * Version: 0.0.3
