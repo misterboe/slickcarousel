@@ -6,8 +6,8 @@ $transparentbg: rgba(0, 0, 0, .5);
 @import "../bower_components/animatewithsass/_fading-exits/fadeOutDown";
 @import "../bower_components/animatewithsass/_fading-entrances/fadeIn";
 
-@import "../bower_components/slick-carousel/slick/slick";
-@import "../bower_components/slick-carousel/slick/slick-theme";
+@import "../bower_components/slick-carousel/slick/slick.scss";
+@import "../bower_components/slick-carousel/slick/slick-theme.scss";
 
 .slick-slider {
   figure {
