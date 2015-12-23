@@ -1,6 +1,6 @@
 {
   "name": "bo/slickcarousel",
-  "description": "Slick carousel for Typo3",
+  "description": "slick - the last carousel you'll ever need. For more informations please have a look at https://github.com/misterboe/slickcarousel. If you need more features please create an issue on github.",
   "type": "typo3-cms-extension",
   "version": "0.0.5",
   "require": {
