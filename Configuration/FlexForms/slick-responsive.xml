@@ -110,7 +110,8 @@
                     </easing>
                     <edgeFriction type="array">
                         <TCEforms type="array">
-                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:edgeFriction</label>
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:edgeFriction
+                            </label>
                             <config type="array">
                                 <type>input</type>
                                 <size>1</size>
@@ -156,14 +157,43 @@
                             </config>
                         </TCEforms>
                     </initialSlide>
+                    <randomSlide type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:randomSlide
+                            </label>
+                            <config type="array">
+                                <type>radio</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:randomSlide.none</numIndex>
+                                        <numIndex index="1">off</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:randomSlide.js</numIndex>
+                                        <numIndex index="1">js</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:randomSlide.vhs</numIndex>
+                                        <numIndex index="1">vhs</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </randomSlide>
                     <lazyLoad type="array">
                         <TCEforms type="array">
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:lazyLoad</label>
                             <config type="array">
                                 <type>select</type>
                                 <items type="array">
-                                    <numIndex index="0" type="array"><numIndex index="0">ondemand</numIndex><numIndex index="1">ondemand</numIndex></numIndex>
-                                    <numIndex index="1" type="array"><numIndex index="0">progressive</numIndex><numIndex index="1">progressive</numIndex></numIndex>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">ondemand</numIndex>
+                                        <numIndex index="1">ondemand</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">progressive</numIndex>
+                                        <numIndex index="1">progressive</numIndex>
+                                    </numIndex>
                                 </items>
                                 <default>ondemand</default>
                             </config>
@@ -195,9 +225,18 @@
                             <config type="array">
                                 <type>select</type>
                                 <items type="array">
-                                    <numIndex index="0" type="array"><numIndex index="0">window</numIndex><numIndex index="1">window</numIndex></numIndex>
-                                    <numIndex index="1" type="array"><numIndex index="0">slider</numIndex><numIndex index="1">slider</numIndex></numIndex>
-                                    <numIndex index="2" type="array"><numIndex index="0">min</numIndex><numIndex index="1">min</numIndex></numIndex>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">window</numIndex>
+                                        <numIndex index="1">window</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">slider</numIndex>
+                                        <numIndex index="1">slider</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">min</numIndex>
+                                        <numIndex index="1">min</numIndex>
+                                    </numIndex>
                                 </items>
                                 <default>window</default>
                             </config>
