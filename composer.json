@@ -2,7 +2,7 @@
   "name": "bo/slickcarousel",
   "description": "slick - the last carousel you'll ever need. For more informations please have a look at https://github.com/misterboe/slickcarousel. If you need more features please create an issue on github.",
   "type": "typo3-cms-extension",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "require": {
     "typo3/cms": ">=7.6.0,<8.0",
     "fluidtypo3/vhs": "^2.3.3"
