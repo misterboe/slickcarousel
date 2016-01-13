@@ -7,6 +7,11 @@
 	<f:section name="JS-Responsive">
 		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
 			$(document).ready(function () {
+				<f:if condition="{data.pi_flexform.randomSlide} == 'js'">
+					var total = $('#slick-id{data.uid} img').length,
+					rand = Math.floor( Math.random() * total );
+				</f:if>
+
 				$('#slick-id{data.uid}').slick({
 					accessibility: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.accessibility)}</f:format.raw>,
 					autoplay: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.autoplay)}</f:format.raw>,
@@ -22,7 +27,14 @@
 					fade: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.fade)}</f:format.raw>,
 					mobileFirst: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.mobileFirst)}</f:format.raw>,
 					infinite: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.infinite)}</f:format.raw>,
-					initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>,
+					<f:if condition="{data.pi_flexform.randomSlide} == 'js'">
+						<f:then>
+							initialSlide: rand,
+						</f:then>
+						<f:else>
+							initialSlide: <f:format.raw>{data.pi_flexform.initialSlide}</f:format.raw>,
+						</f:else>
+					</f:if>
 					lazyLoad: '<f:format.raw>{data.pi_flexform.lazyLoad}</f:format.raw>',
 					pauseOnHover: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.pauseOnHover)}</f:format.raw>,
 					pauseOnDotsHover: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.pauseOnDotsHover)}</f:format.raw>,
