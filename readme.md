@@ -41,6 +41,8 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.1.0
+    * Random sorting for Expert Slider
 * Version: 0.0.5
 	* CSS fixes
 	* Add Grunt task to build CSS file
