@@ -1,10 +1,14 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
 	 data-namespace-typo3-fluid="true">
 
 	<f:layout name="Default" />
 
 	<f:section name="Main">
+		<f:if condition="{data.pi_flexform.randomSlide} == 'vhs'">
+			<v:iterator.sort subject="{slickimages}" as="slickimages" order="RAND" />
+		</f:if>
 
 		<div class="slick-slider slick-default" id="slick-id{data.uid}-main">
 			<f:for each="{slickimages}" as="file" iteration="i">

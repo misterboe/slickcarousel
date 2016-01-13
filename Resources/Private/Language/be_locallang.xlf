@@ -84,6 +84,18 @@
 			<trans-unit id="initialSlide" xml:space="preserve">
 				<source>initialSlide: Slide to start on</source>
 			</trans-unit>
+			<trans-unit id="randomSlide" xml:space="preserve">
+				<source>randomSlide: Select random mode</source>
+			</trans-unit>
+			<trans-unit id="randomSlide.none" xml:space="preserve">
+				<source>Off</source>
+			</trans-unit>
+			<trans-unit id="randomSlide.js" xml:space="preserve">
+				<source>Random starting slide (pseudo random)</source>
+			</trans-unit>
+			<trans-unit id="randomSlide.vhs" xml:space="preserve">
+				<source>Randomize selected images with vhs (slower)</source>
+			</trans-unit>
 			<trans-unit id="lazyLoad" xml:space="preserve">
 				<source>lazyLoad: Accepts 'ondemand' or 'progressive' for lazy load technique</source>
 			</trans-unit>
