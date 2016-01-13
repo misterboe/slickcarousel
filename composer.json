@@ -5,7 +5,7 @@
   "version": "0.0.5",
   "require": {
     "typo3/cms": ">=7.6.0,<8.0",
-    "fluidtypo3/vhs": "*"
+    "fluidtypo3/vhs": "^2.3.3"
   },
   "authors": [
     {
