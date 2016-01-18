@@ -65,8 +65,8 @@
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:cssEase</label>
                             <config type="array">
                                 <type>input</type>
-                                <size>1</size>
-                                <default>ease</default>
+                                <size>20</size>
+                                <default>cubic-bezier(0.950, 0.050, 0.795, 0.035)</default>
                             </config>
                         </TCEforms>
                     </cssEase>
@@ -248,7 +248,7 @@
                             <config type="array">
                                 <type>input</type>
                                 <size>1</size>
-                                <default>300</default>
+                                <default>600</default>
                             </config>
                         </TCEforms>
                     </speed>
