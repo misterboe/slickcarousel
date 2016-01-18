@@ -1,5 +1,7 @@
 $slick-arrow-color: #000 !default;
 $transparentbg: rgba(0, 0, 0, .5);
+$slick-light: #fff;
+$slick-dark: #000;
 
 @import "../bower_components/animatewithsass/properties";
 @import "../bower_components/animatewithsass/_fading-entrances/fadeInUp";
@@ -18,7 +20,7 @@ $transparentbg: rgba(0, 0, 0, .5);
     figcaption {
       background: $transparentbg;
       bottom: 0;
-      color: #fff;
+      color: $slick-light;
       font-size: 22px;
       opacity: 0;
       padding: 1vh;
@@ -42,7 +44,6 @@ $transparentbg: rgba(0, 0, 0, .5);
 
   .slick-next,
   .slick-prev {
-    -webkit-transform: translateY(-50%);
     border: 0;
     cursor: pointer;
     display: block;
@@ -61,7 +62,7 @@ $transparentbg: rgba(0, 0, 0, .5);
     &:before {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
-      color: #fff;
+      color: $slick-light;
       font-family: slick;
       font-size: 50px;
       line-height: 1;
@@ -89,7 +90,7 @@ $transparentbg: rgba(0, 0, 0, .5);
         width: 20px;
 
         &:before {
-          color: #000;
+          color: $slick-dark;
           font-family: slick;
           font-size: 14px;
           height: 14px;
@@ -140,10 +141,10 @@ $transparentbg: rgba(0, 0, 0, .5);
 
 /*ANIMATION*/
 
-.slick-prev, .slick-next, .slick-prev:before, .slick-next:before,.slick-slider .slick-dots li button:before{
-  transition: all 0.25s;
-  -o-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -webkit-transition: all 0.25s;
+.slick-prev,
+.slick-next,
+.slick-prev:before,
+.slick-next:before,
+.slick-slider .slick-dots li button:before {
+  transition: all .25s;
 }
