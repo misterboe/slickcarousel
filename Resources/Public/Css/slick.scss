@@ -138,3 +138,12 @@ $transparentbg: rgba(0, 0, 0, .5);
   }
 }
 
+/*ANIMATION*/
+
+.slick-prev, .slick-next, .slick-prev:before, .slick-next:before,.slick-slider .slick-dots li button:before{
+  transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
