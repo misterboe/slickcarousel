@@ -31,6 +31,7 @@ $slick-dark: #000;
   }
 
   .slick-current {
+
     figcaption {
       @include fadeIn($delay: .5s);
     }
@@ -138,8 +139,6 @@ $slick-dark: #000;
     }
   }
 }
-
-/*ANIMATION*/
 
 .slick-prev,
 .slick-next,
