@@ -4,6 +4,15 @@ module.exports = function (grunt) {
     require('jit-grunt')(grunt);
 
     grunt.initConfig({
+        watch: {
+            sass: {
+                files: ['Resources/Public/Css/*.scss'],
+                tasks: ['default'],
+                options: {
+                    spawn: false,
+                }
+            }
+        },
         sass: {
             options: {
                 sourceMap: true,
@@ -38,5 +47,5 @@ module.exports = function (grunt) {
         }
 
     });
-    grunt.registerTask('default', ['shell', 'sass', 'postcss']);
+    grunt.registerTask('default', ['shell', 'sass', 'postcss', 'watch']);
 };
