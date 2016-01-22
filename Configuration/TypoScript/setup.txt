@@ -10,7 +10,7 @@
     }
 [global]
 
-[globalVar = LIT:1 = {$slick_css}]
+[globalVar = LIT:1 = {$slick_js}]
     page.includeJSFooter {
         slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
     }
