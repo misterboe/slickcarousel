@@ -41,6 +41,8 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.2.1
+    * Bugfix: (TS) JS include switch
 * Version: 0.2.0
     * Easing is now default and working [cssEase: cubic-bezier(0.950, 0.050, 0.795, 0.035)]
     * CSS improvements (thx to Oliver Oertel from analog.de)

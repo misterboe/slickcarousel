@@ -1,19 +1,13 @@
 [globalVar = LIT:1 = {$slick_css}]
-    page.includeCSS {
-        slickcarousel = EXT:slickcarousel/Resources/Public/Css/slick.min.css
-    }
+    page.includeCSS.slickcarousel = EXT:slickcarousel/Resources/Public/Css/slick.min.css
 [global]
 
 [globalVar = LIT:1 = {$slick_jquery}]
-    page.includeJSFooterlibs {
-        jQuery = EXT:slickcarousel/Resources/Public/JavaScript/jquery.min.js
-    }
+    page.includeJSFooterlibs.jQuery = EXT:slickcarousel/Resources/Public/JavaScript/jquery.min.js
 [global]
 
-[globalVar = LIT:1 = {$slick_css}]
-    page.includeJSFooter {
-        slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
-    }
+[globalVar = LIT:1 = {$slick_js}]
+    page.includeJSFooter.slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
 [global]
 
 [applicationContext = Development]
