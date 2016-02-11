@@ -4,10 +4,11 @@
 
 [globalVar = LIT:1 = {$slick_jquery}]
     page.includeJSFooterlibs.jQuery = EXT:slickcarousel/Resources/Public/JavaScript/jquery.min.js
+    page.includeJSFooterlibs.jQuery.forceOnTop = true
 [global]
 
 [globalVar = LIT:1 = {$slick_js}]
-    page.includeJSFooter.slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
+    page.includeJSFooterlibs.slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
 [global]
 
 [applicationContext = Development]
