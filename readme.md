@@ -41,6 +41,9 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.2.2
+    * Changed description
+    * Bugfix: (TS) jQuery force on top
 * Version: 0.2.1
     * Bugfix: (TS) JS include switch
 * Version: 0.2.0
