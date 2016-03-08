@@ -2,9 +2,9 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Slick Carousel',
-    'description' => 'the last carousel you\'ll ever need',
+    'description' => 'Slick Carousel (Slider) - Responsive, Multiple Items, Center Mode, Lazy Loading, Autoplay, Slider Syncing (Gallery)',
     'category' => 'templates',
-    'version' => '0.2.1',
+    'version' => '0.2.2',
     'state' => 'stable',
     'clearcacheonload' => 1,
     'author' => 'Boris Schauer, Oliver Oertel',
