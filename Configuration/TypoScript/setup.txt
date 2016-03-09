@@ -9,6 +9,7 @@
 
 [globalVar = LIT:1 = {$slick_js}]
     page.includeJSFooterlibs.slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
+    page.includeJSFooterlibs.progressbar = EXT:slickcarousel/Resources/Public/JavaScript/progressbar.min.js
 [global]
 
 ### Template ###
