@@ -1,6 +1,9 @@
 #slick - the last carousel you'll ever need
 
-### this is a typo3 (7LTS) extenions of the slick carousel 
+### this is a typo3 (7LTS) extenions of the slick carousel
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/?branch=develop)
+[![Build Status](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/build-status/develop)
 
 <img src="http://snag.gy/jsI2I.jpg" alt="alt text" style="width:400px;height:auto">
 
