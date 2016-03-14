@@ -12,6 +12,17 @@
     page.includeJSFooterlibs.progressbar = EXT:slickcarousel/Resources/Public/JavaScript/progressbar.min.js
 [global]
 
+plugin.tx_slickcarousel.slick_progressbar_basic = {$slick_progressbar_basic}
+plugin.tx_slickcarousel.slick_progressbar_synced = {$slick_progressbar_synced}
+plugin.tx_slickcarousel.slick_progressbar_bgimg = {$slick_progressbar_bgimg}
+plugin.tx_slickcarousel.slick_progressbar_expert = {$slick_progressbar_expert}
+
+plugin.tx_slickcarousel.slick_progressbar_color = {$slick_progressbar_color}
+plugin.tx_slickcarousel.slick_progressbar_trailColor = {$slick_progressbar_trailColor}
+plugin.tx_slickcarousel.slick_progressbar_strokeWidth = {$slick_progressbar_strokeWidth}
+plugin.tx_slickcarousel.slick_progressbar_trailWidth = {$slick_progressbar_trailWidth}
+plugin.tx_slickcarousel.slick_progressbar_easing = {$slick_progressbar_easing}
+
 ### Template ###
 tt_content.slickcarousel = FLUIDTEMPLATE
 tt_content.slickcarousel {

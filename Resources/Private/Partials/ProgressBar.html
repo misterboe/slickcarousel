@@ -8,11 +8,11 @@
 		<v:asset.script fluid="true" rewrite="true" name="progressbar{data.uid}">
 			$(document).ready(function () {
 				var line = new ProgressBar.Line('<f:format.raw>#loader-slick-id{data.uid}</f:format.raw>', {
-					color: '#27ae60',
-					trailColor: '#f4f4f4',
-					strokeWidth: 0.5,
-					trailWidth: 0.5,
-					easing: 'easeInOut',
+					color: '<f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_color')}</f:format.raw>',
+					trailColor: '<f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_trailColor')}</f:format.raw>',
+					strokeWidth: <f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_strokeWidth')}</f:format.raw>,
+					trailWidth: <f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_trailWidth')}</f:format.raw>,
+					easing: '<f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_easing')}</f:format.raw>',
 					duration: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
 				});
 
