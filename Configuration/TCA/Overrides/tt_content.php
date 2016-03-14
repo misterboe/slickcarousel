@@ -52,6 +52,16 @@ $slick_default_fields = array(
             ),
         ),
     ),
+    'slickheight' => array(
+        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.height',
+        'config' => array(
+            'type' => 'input',
+            'size' => '3',
+            'eval' => 'trim',
+            'max' => '240',
+            'default' => '25%'
+        ),
+    ),
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $slick_default_fields);
@@ -169,6 +179,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbgimg'] = array(
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
 		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
+		slickheight;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.height,
 		tx_slickcarouselbgimg;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title,
 		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 		pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,

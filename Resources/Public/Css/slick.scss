@@ -30,8 +30,13 @@ $slick-dark: #000;
     }
   }
 
-  .slick-current {
+  &.slick-bgimg {
+    .slick-item {
+      background-size: cover;
+    }
+  }
 
+  .slick-current {
     figcaption {
       @include fadeIn($delay: .5s);
     }

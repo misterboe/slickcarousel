@@ -3,6 +3,7 @@
 #
 CREATE TABLE tt_content (
 	slickdefault int(11) unsigned DEFAULT '0' NOT NULL,
+	slickheight varchar(11) DEFAULT '' NOT NULL,
 	tx_slickcarouselbgimg varchar(255) DEFAULT '' NOT NULL,
 );
 
