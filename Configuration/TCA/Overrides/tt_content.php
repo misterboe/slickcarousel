@@ -88,6 +88,8 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
 		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
 		slickdefault;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides,
 		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+		pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 		--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
 	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
@@ -99,6 +101,9 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
         tx_gridelements_columns,
     '
 );
+
+$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbasic'] =
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-basic.xml';
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',

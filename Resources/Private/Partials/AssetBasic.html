@@ -7,6 +7,7 @@
 		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
 			$(document).ready(function () {
 				$('#slick-id{data.uid}').slick({
+					autoplay: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.autoplay)}</f:format.raw>,
 					infinite: true,
 					dots: true,
 					speed: 600,
