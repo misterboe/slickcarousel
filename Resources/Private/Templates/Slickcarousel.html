@@ -6,22 +6,33 @@
 	<f:layout name="Default" />
 
 	<f:section name="Main">
-		<div class="slick-slider slick-default" id="slick-id{data.uid}">
-			<f:if condition="{data.pi_flexform.randomSlide} == 'vhs'">
-				<v:iterator.sort subject="{slickimages}" as="slickimages" order="RAND" />
+		<div class="slick-container">
+			<f:if condition="{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_expert')}">
+				<f:if condition="{data.pi_flexform.autoplay}">
+					<div id="loader-slick-id{data.uid}"></div>
+				</f:if>
 			</f:if>
-
-			<f:for each="{slickimages}" as="file" iteration="i">
-				<div class="slick-item">
-					<figure>
-						<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1980)}" title="{file.title}" alt="{file.alternative}" />
-						<f:if condition="{file.description}">
-							<figcaption>{file.description}</figcaption>
-						</f:if>
-					</figure>
-				</div>
-			</f:for>
+			<div class="slick-slider slick-default" id="slick-id{data.uid}">
+				<f:if condition="{data.pi_flexform.randomSlide} == 'vhs'">
+					<v:iterator.sort subject="{slickimages}" as="slickimages" order="RAND" />
+				</f:if>
+				<f:for each="{slickimages}" as="file" iteration="i">
+					<div class="slick-item">
+						<figure>
+							<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1980)}" title="{file.title}" alt="{file.alternative}" />
+							<f:if condition="{file.description}">
+								<figcaption>{file.description}</figcaption>
+							</f:if>
+						</figure>
+					</div>
+				</f:for>
+			</div>
 		</div>
 		<f:render partial="AssetAll" section="JS-Responsive" arguments="{_all}" />
+		<f:if condition="{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_expert')}">
+			<f:if condition="{data.pi_flexform.autoplay}">
+				<f:render partial="ProgressBar" section="ProgressBar" arguments="{_all}" />
+			</f:if>
+		</f:if>
 	</f:section>
 </div>
