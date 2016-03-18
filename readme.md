@@ -47,7 +47,7 @@ TCEFORM.tt_content.CType {
 * Version: 0.2.1
     * Bugfix: (TS) JS include switch
 * Version: 0.2.0
-    * Easing is now default and working [cssEase: cubic-bezier(0.950, 0.050, 0.795, 0.035)]
+    * Easing is now default and working [cssEase: cubic-bezier(0.455, 0.03, 0.515, 0.955)]
     * CSS improvements (thx to Oliver Oertel from analog.de)
 * Version: 0.1.0
     * Random sorting for Expert Slider
