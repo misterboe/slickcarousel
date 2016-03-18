@@ -7,6 +7,7 @@
 
 	<f:section name="Main">
 		<div class="slick-container">
+			<v:variable.set name="slick-bgimg" value="true" />
 			<f:if condition="{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_basic')}">
 				<f:if condition="{data.pi_flexform.autoplay}">
 					<div id="loader-slick-id{data.uid}"></div>
@@ -14,7 +15,7 @@
 			</f:if>
 			<div class="slick-slider slick-bgimg" id="slick-id{data.uid}">
 				<f:for each="{slides}" as="slide" iteration="i-slide">
-					<div class="slick-item" id="slick-id{data.uid}-slide{i-slide.cycle}" style="background-image: url('{f:uri.image(image:slide.images.0)}'); padding-top:{data.slickheight};">
+					<div class="slick-item" id="slick-id{data.uid}-slide{i-slide.cycle}" style="background-image: url('{f:uri.image(image:slide.images.0)}');">
 						<div class="slick-text">
 							<span class="h1">{slide.data.headline}</span>
 							<span class="h2">{slide.data.subline}</span>

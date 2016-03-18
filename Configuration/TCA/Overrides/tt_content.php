@@ -59,7 +59,7 @@ $slick_default_fields = array(
             'size' => '3',
             'eval' => 'trim',
             'max' => '240',
-            'default' => '25%'
+            'default' => '0.5'
         ),
     ),
 );

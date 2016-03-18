@@ -13,7 +13,7 @@
 				<source>Slick - Text</source>
 			</trans-unit>
             <trans-unit id="slickcarouselbging.height" xml:space="preserve">
-				<source>Height of Slick Carousel (25%)</source>
+				<source>Height of Slick Carousel (0.5)</source>
 			</trans-unit>
 			<trans-unit id="slickcarouselbasic.description" xml:space="preserve">
 				<source>One Slide with default Settings</source>
