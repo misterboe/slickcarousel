@@ -36,7 +36,7 @@
 ### Page TS
 ```
 TCEFORM.tt_content.CType {
-    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync
+    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync,slickcarouselbgimg
 }
 ```
 

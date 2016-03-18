@@ -11,6 +11,40 @@ $slick-dark: #000;
 @import "../bower_components/slick-carousel/slick/slick.scss";
 @import "../bower_components/slick-carousel/slick/slick-theme.scss";
 
+@keyframes slowFadeIn {
+  0% {
+    color: transparent;
+    letter-spacing: -.02em;
+    opacity: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    transform: scale(.7);
+
+  }
+  30% {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5);
+
+  }
+  100% {
+    color: rgba(0, 0, 0, .56);
+    letter-spacing: .3em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    transform: scale(1);
+  }
+}
+
+.slick-container {
+  position: relative;
+
+  [ID*="loader-slick-"] {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
 .slick-slider {
   figure {
     margin: 0;
@@ -140,6 +174,63 @@ $slick-dark: #000;
 
       &:before {
         margin-left: -60%;
+      }
+    }
+  }
+}
+
+.slick-bgimg {
+  .slick-item {
+    background: no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+    .slick-text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 50%;
+      height: 20%;
+      margin: auto;
+
+      .h1 {
+        border: none;
+        color: rgba(0, 0, 0, 0.56);
+        display: block;
+        font-size: 42px;
+        font-weight: 200;
+        letter-spacing: 0.3em;
+        line-height: 1.16;
+        margin: auto;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        white-space: nowrap;
+        word-break: keep-all;
+      }
+
+      .h2 {
+        color: rgba(0, 0, 0, 0.56);
+        display: block;
+        font-size: 42px;
+        font-weight: 200;
+        letter-spacing: 0.3em;
+        line-height: 1.16;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        white-space: nowrap;
+        word-break: keep-all;
+      }
+    }
+
+    &.slick-active {
+      .slick-text {
+        .h1,
+        .h2 {
+          animation: slowFadeIn 3s ease;
+        }
       }
     }
   }
