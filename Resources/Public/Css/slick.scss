@@ -13,22 +13,21 @@ $slick-dark: #000;
 
 @keyframes slowFadeIn {
   0% {
-    color: transparent;
+    color: rgba(255, 255, 255, 0);
     letter-spacing: -.02em;
     opacity: 0;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0);
     transform: scale(.7);
 
   }
   30% {
-    color: transparent;
-    text-shadow: 0 0 5px rgba(255, 255, 255, .5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
 
   }
   100% {
-    color: rgba(0, 0, 0, .56);
+    color: rgba(255, 255, 255, 1);
     letter-spacing: .3em;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
     transform: scale(1);
   }
 }
@@ -198,28 +197,28 @@ $slick-dark: #000;
 
       .h1 {
         border: none;
-        color: rgba(0, 0, 0, 0.56);
+        color: rgba(255, 255, 255, 1);
         display: block;
         font-size: 42px;
-        font-weight: 200;
+        font-weight: 700;
         letter-spacing: 0.3em;
         line-height: 1.16;
         margin: auto;
         text-align: center;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
         white-space: nowrap;
         word-break: keep-all;
       }
 
       .h2 {
-        color: rgba(0, 0, 0, 0.56);
+        color: rgba(255, 255, 255, 1);
         display: block;
         font-size: 42px;
-        font-weight: 200;
+        font-weight: 700;
         letter-spacing: 0.3em;
         line-height: 1.16;
         text-align: center;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
         white-space: nowrap;
         word-break: keep-all;
       }
