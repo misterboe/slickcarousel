@@ -17,18 +17,45 @@
 				});
 
 				line.animate(1.0);
-				$('#slick-id{data.uid}').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-					line.set(0);
-					line.animate(1.0);
-				});
 
-				$( "#slick-id{data.uid}" ).mouseover(function() {
-					line.stop();
-				});
+				<f:if condition="{slick-synced}">
+					<f:then>
+						$('#slick-id{data.uid}-main').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+							line.set(0);
+							line.animate(1.0);
+						});
 
-				$( "#slick-id{data.uid}" ).mouseout(function() {
-					line.animate(1.0);
-				});
+						$( "#slick-id{data.uid}-main" ).mouseover(function() {
+							line.stop();
+						});
+
+						$( "#slick-id{data.uid}-main" ).mouseout(function() {
+							line.animate(1.0);
+						});
+
+						$( "#slick-id{data.uid}-nav" ).mouseover(function() {
+							line.stop();
+						});
+
+						$( "#slick-id{data.uid}-nav" ).mouseout(function() {
+							line.animate(1.0);
+						});
+					</f:then>
+					<f:else>
+						$('#slick-id{data.uid}').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+							line.set(0);
+							line.animate(1.0);
+						});
+
+						$( "#slick-id{data.uid}" ).mouseover(function() {
+							line.stop();
+						});
+
+						$( "#slick-id{data.uid}" ).mouseout(function() {
+							line.animate(1.0);
+						});
+					</f:else>
+				</f:if>
 			});
 		</v:asset.script>
 	</f:section>
