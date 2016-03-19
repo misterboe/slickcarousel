@@ -41,6 +41,9 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.3.0
+    * Add Progressbar to all Slider types
+    * New Slider type > Slick - Text (Image as CSS Background)
 * Version: 0.2.2
     * Changed description
     * Bugfix: (TS) jQuery force on top
