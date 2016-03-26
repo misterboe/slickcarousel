@@ -9,7 +9,7 @@
 * Very easy to use
 * Supports image crop
 
-![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/LNt5C.jpg)
 ![image](http://snag.gy/FsWNa.jpg)
 
 ## slick - Synced
@@ -18,7 +18,7 @@
 * Supports image crop
 * Two syncronized slider (Gallery like)
 
-![image](http://snag.gy/drzTv.jpg)
+![image](http://snag.gy/mHIHd.jpg)
 ![image](http://snag.gy/st65k.jpg)
 
 ## slick - Expert
@@ -27,7 +27,7 @@
 * Supports image crop
 * Responsive settings
 
-![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/E5w3q.jpg)
 ![image](http://snag.gy/NI3lB.jpg)
 ![image](http://snag.gy/TRror.jpg)
 
@@ -44,6 +44,7 @@ TCEFORM.tt_content.CType {
 * Version: 0.3.0
     * Add Progressbar to all Slider types
     * New Slider type > Slick - Text (Image as CSS Background)
+    * Add "autoplay" option to Basic Slider
 * Version: 0.2.2
     * Changed description
     * Bugfix: (TS) jQuery force on top
