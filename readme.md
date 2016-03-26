@@ -2,7 +2,26 @@
 
 ### this is a typo3 (7LTS) extenions of the slick carousel 
 
-<img src="http://snag.gy/jsI2I.jpg" alt="alt text" style="width:400px;height:auto">
+![image](http://snag.gy/F79ys.jpg)
+
+## Settings
+* Basic Slick - Constants
+![image](http://snag.gy/NaCqn.jpg)
+
+* Progressbar Enable - Constants
+    * Slick - Basic // Enable Progressbar
+    * Slick - Synced // Enable Progressbar
+    * Slick - Text // Enable Progressbar
+    * Slick - Expert // Enable Progressbar
+
+* Progressbar Settings - Constants
+    * Progressbar Color
+    * Progressbar TrailColor
+    * Progressbar Easing
+    * Progressbar StrokeWidth
+    * Progressbar TrailWidth
+
+![image](http://snag.gy/30gSn.jpg)
 
 ## slick - Basic
 * Description (Caption) is shown in frontend
