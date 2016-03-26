@@ -36,11 +36,12 @@ $slick-dark: #000;
   position: relative;
 
   [ID*="loader-slick-"] {
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     position: absolute;
     width: 100%;
     z-index: 999;
+    opacity: .5;
   }
 }
 
