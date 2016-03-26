@@ -13,16 +13,16 @@ slick_js = 1
 # customsubcategory=110=Progressbar Enable
 
 # cat=Slick Carousel: progressbar/110/100 type=boolean; label=Slick - Basic: Enable Progressbar
-slick_progressbar_basic = true
+slick_progressbar_basic = 1
 
 # cat=Slick Carousel: progressbar/110/120 type=boolean; label=Slick - Synced: Enable Progressbar
-slick_progressbar_synced = true
+slick_progressbar_synced = 1
 
 # cat=Slick Carousel: progressbar/110/130 type=boolean; label=Slick - Text: Enable Progressbar
-slick_progressbar_bgimg = true
+slick_progressbar_bgimg = 1
 
 # cat=Slick Carousel: progressbar/110/140 type=boolean; label=Slick - Expert: Enable Progressbar
-slick_progressbar_expert = true
+slick_progressbar_expert = 1
 
 
 # customsubcategory=120=Progressbar Settings
@@ -34,10 +34,10 @@ slick_progressbar_color = #27ae60
 slick_progressbar_trailColor = #f4f4f4
 
 # cat=Slick Carousel: progressbar/120/120 type=string; label=Progressbar StrokeWidth
-slick_progressbar_strokeWidth = 0.5
+slick_progressbar_strokeWidth = 0.7
 
 # cat=Slick Carousel: progressbar/120/130 type=string; label=Progressbar TrailWidth
-slick_progressbar_trailWidth = 0.5
+slick_progressbar_trailWidth = 0.7
 
 # cat=Slick Carousel: progressbar/120/120 type=string; label=Progressbar Easing
 slick_progressbar_easing = easeInOut
