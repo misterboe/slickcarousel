@@ -25,6 +25,43 @@ $slick_default_fields = array(
             $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
         ),
     ),
+    'tx_slickcarouselbgimg' => array(
+        'exclude' => 0,
+        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
+        'config' => array(
+            'type' => 'inline',
+            'foreign_table' => 'tx_slickcarouselbgimg',
+            'foreign_field' => 'tt_content',
+            'maxitems' => 999,
+            'appearance' => array(
+                'collapseAll' => true,
+                'useSortable' => true,
+                'showSynchronizationLink' => false,
+                'showAllLocalizationLink' => true,
+                'showPossibleLocalizationRecords' => false,
+                'showRemovedLocalizationRecords' => false,
+                'expandSingle' => true,
+                'enabledControls' => array(
+                    'localize' => true,
+                ),
+            ),
+            'behaviour' => array(
+                'localizationMode' => 'select',
+                'mode' => 'select',
+                'localizeChildrenAtParentLocalization' => true,
+            ),
+        ),
+    ),
+    'slickheight' => array(
+        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.height',
+        'config' => array(
+            'type' => 'input',
+            'size' => '3',
+            'eval' => 'trim',
+            'max' => '240',
+            'default' => '0.5'
+        ),
+    ),
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $slick_default_fields);
@@ -51,6 +88,8 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
 		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
 		slickdefault;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides,
 		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+		pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
 	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 		--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
 	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
@@ -62,6 +101,9 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
         tx_gridelements_columns,
     '
 );
+
+$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbasic'] =
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-basic.xml';
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',
@@ -135,6 +177,39 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
 );
 
 // Slick Expert - END
+
+// Slick Text - START
+
+$GLOBALS['TCA']['tt_content']['types']['slickcarouselbgimg'] = array(
+    'showitem' => '
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+		header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
+		slickheight;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.height,
+		tx_slickcarouselbgimg;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title,
+		--div--;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+		pi_flexform;LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:settings,
+	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+		--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
+		--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
+		--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended
+	--div--;Gridelements,
+	    tx_gridelements_container,
+        tx_gridelements_columns,
+    '
+);
+
+$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbgimg'] =
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
+
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
+    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
+    'slickcarouselbgimg',
+    'EXT:slickcarousel/ext_icon.gif'
+);
+
+// Slick Text - END
 
 
 foreach ($backupCTypeItems as $key => $value) {

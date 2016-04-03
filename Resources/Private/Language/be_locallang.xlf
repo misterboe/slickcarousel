@@ -9,8 +9,17 @@
 			<trans-unit id="slickcarouselbasic.title" xml:space="preserve">
 				<source>Slick - Basic</source>
 			</trans-unit>
+            <trans-unit id="slickcarouselbging.title" xml:space="preserve">
+				<source>Slick - Text</source>
+			</trans-unit>
+            <trans-unit id="slickcarouselbging.height" xml:space="preserve">
+				<source>Height of Slick Carousel (0.5)</source>
+			</trans-unit>
 			<trans-unit id="slickcarouselbasic.description" xml:space="preserve">
 				<source>One Slide with default Settings</source>
+			</trans-unit>
+            <trans-unit id="slickcarouselbging.description" xml:space="preserve">
+				<source>Slider with animated text and image as background</source>
 			</trans-unit>
 			<trans-unit id="slickcarouselsync.title" xml:space="preserve">
 				<source>Slick - Synced</source>
@@ -167,6 +176,15 @@
 			</trans-unit>
 			<trans-unit id="arrows" xml:space="preserve">
 				<source>arrows: Enable Next/Prev arrows</source>
+			</trans-unit>
+            <trans-unit id="slickcarouselbging.headline" xml:space="preserve">
+				<source>Headline</source>
+			</trans-unit>
+            <trans-unit id="slickcarouselbging.subline" xml:space="preserve">
+				<source>Subline</source>
+			</trans-unit>
+            <trans-unit id="slickcarouselbging.image" xml:space="preserve">
+				<source>Background Image</source>
 			</trans-unit>
         </body>
     </file>

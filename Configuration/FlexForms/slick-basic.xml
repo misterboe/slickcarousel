@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta type="array">
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <general>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:general</sheetTitle>
+                </TCEforms>
+                <el type="array">
+                    <autoplay type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:autoplay</label>
+                            <config type="array">
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </autoplay>
+                    <autoplaySpeed type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:autoplaySpeed
+                            </label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>1</size>
+                                <default>5000</default>
+                            </config>
+                        </TCEforms>
+                    </autoplaySpeed>
+                </el>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

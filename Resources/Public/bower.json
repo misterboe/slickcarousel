@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "slick-carousel": "~1.5.9",
-    "animatewithsass": "~3.2.2"
+    "animatewithsass": "~3.2.2",
+    "progressbar.js": "^0.9.0"
   }
 }

@@ -5,14 +5,33 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/?branch=develop)
 [![Build Status](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/build-status/develop)
 
-<img src="http://snag.gy/jsI2I.jpg" alt="alt text" style="width:400px;height:auto">
+![image](http://snag.gy/F79ys.jpg)
+
+## Settings
+* Basic Slick - Constants
+![image](http://snag.gy/NaCqn.jpg)
+
+* Progressbar Enable - Constants
+    * Slick - Basic // Enable Progressbar
+    * Slick - Synced // Enable Progressbar
+    * Slick - Text // Enable Progressbar
+    * Slick - Expert // Enable Progressbar
+
+* Progressbar Settings - Constants
+    * Progressbar Color
+    * Progressbar TrailColor
+    * Progressbar Easing
+    * Progressbar StrokeWidth
+    * Progressbar TrailWidth
+
+![image](http://snag.gy/30gSn.jpg)
 
 ## slick - Basic
 * Description (Caption) is shown in frontend
 * Very easy to use
 * Supports image crop
 
-![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/LNt5C.jpg)
 ![image](http://snag.gy/FsWNa.jpg)
 
 ## slick - Synced
@@ -21,7 +40,7 @@
 * Supports image crop
 * Two syncronized slider (Gallery like)
 
-![image](http://snag.gy/drzTv.jpg)
+![image](http://snag.gy/mHIHd.jpg)
 ![image](http://snag.gy/st65k.jpg)
 
 ## slick - Expert
@@ -30,7 +49,7 @@
 * Supports image crop
 * Responsive settings
 
-![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/E5w3q.jpg)
 ![image](http://snag.gy/NI3lB.jpg)
 ![image](http://snag.gy/TRror.jpg)
 
@@ -39,11 +58,15 @@
 ### Page TS
 ```
 TCEFORM.tt_content.CType {
-    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync
+    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync,slickcarouselbgimg
 }
 ```
 
 ## Changelog:
+* Version: 0.3.0
+    * Add Progressbar to all Slider types
+    * New Slider type > Slick - Text (Image as CSS Background)
+    * Add "autoplay" option to Basic Slider
 * Version: 0.2.2
     * Changed description
     * Bugfix: (TS) jQuery force on top

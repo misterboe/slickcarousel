@@ -1,0 +1,62 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	 xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	 xmlns:bo="http://typo3.org/ns/Bo/Slickcarousel/ViewHelpers"
+	 data-namespace-typo3-fluid="true">
+
+	<f:section name="ProgressBar">
+		<v:asset.script fluid="true" rewrite="true" name="progressbar{data.uid}">
+			$(document).ready(function () {
+				var line = new ProgressBar.Line('<f:format.raw>#loader-slick-id{data.uid}</f:format.raw>', {
+					color: '<f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_color')}</f:format.raw>',
+					trailColor: '<f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_trailColor')}</f:format.raw>',
+					strokeWidth: <f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_strokeWidth')}</f:format.raw>,
+					trailWidth: <f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_trailWidth')}</f:format.raw>,
+					easing: '<f:format.raw>{v:variable.typoscript(path: 'plugin.tx_slickcarousel.slick_progressbar_easing')}</f:format.raw>',
+					duration: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
+				});
+
+				line.animate(1.0);
+
+				<f:if condition="{slick-synced}">
+					<f:then>
+						$('#slick-id{data.uid}-main').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+							line.set(0);
+							line.animate(1.0);
+						});
+
+						$( "#slick-id{data.uid}-main" ).mouseover(function() {
+							line.stop();
+						});
+
+						$( "#slick-id{data.uid}-main" ).mouseout(function() {
+							line.animate(1.0);
+						});
+
+						$( "#slick-id{data.uid}-nav" ).mouseover(function() {
+							line.stop();
+						});
+
+						$( "#slick-id{data.uid}-nav" ).mouseout(function() {
+							line.animate(1.0);
+						});
+					</f:then>
+					<f:else>
+						$('#slick-id{data.uid}').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+							line.set(0);
+							line.animate(1.0);
+						});
+
+						$( "#slick-id{data.uid}" ).mouseover(function() {
+							line.stop();
+						});
+
+						$( "#slick-id{data.uid}" ).mouseout(function() {
+							line.animate(1.0);
+						});
+					</f:else>
+				</f:if>
+			});
+		</v:asset.script>
+	</f:section>
+</div>
