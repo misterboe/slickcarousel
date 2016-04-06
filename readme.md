@@ -1,15 +1,37 @@
 #slick - the last carousel you'll ever need
 
-### this is a typo3 (7LTS) extenions of the slick carousel 
+### this is a typo3 extension of the slick carousel 
 
-<img src="http://snag.gy/jsI2I.jpg" alt="alt text" style="width:400px;height:auto">
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/?branch=develop)
+[![Build Status](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/build-status/develop)
+
+![image](http://snag.gy/F79ys.jpg)
+
+## Settings
+* Basic Slick - Constants
+![image](http://snag.gy/NaCqn.jpg)
+
+* Progressbar Enable - Constants
+    * Slick - Basic // Enable Progressbar
+    * Slick - Synced // Enable Progressbar
+    * Slick - Text // Enable Progressbar
+    * Slick - Expert // Enable Progressbar
+
+* Progressbar Settings - Constants
+    * Progressbar Color
+    * Progressbar TrailColor
+    * Progressbar Easing
+    * Progressbar StrokeWidth
+    * Progressbar TrailWidth
+
+![image](http://snag.gy/30gSn.jpg)
 
 ## slick - Basic
 * Description (Caption) is shown in frontend
 * Very easy to use
 * Supports image crop
 
-![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/LNt5C.jpg)
 ![image](http://snag.gy/FsWNa.jpg)
 
 ## slick - Synced
@@ -18,7 +40,7 @@
 * Supports image crop
 * Two syncronized slider (Gallery like)
 
-![image](http://snag.gy/drzTv.jpg)
+![image](http://snag.gy/mHIHd.jpg)
 ![image](http://snag.gy/st65k.jpg)
 
 ## slick - Expert
@@ -27,7 +49,7 @@
 * Supports image crop
 * Responsive settings
 
-![image](http://snag.gy/qwwSp.jpg)
+![image](http://snag.gy/E5w3q.jpg)
 ![image](http://snag.gy/NI3lB.jpg)
 ![image](http://snag.gy/TRror.jpg)
 
@@ -36,18 +58,22 @@
 ### Page TS
 ```
 TCEFORM.tt_content.CType {
-    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync
+    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync,slickcarouselbgimg
 }
 ```
 
 ## Changelog:
+* Version: 0.3.0
+    * Add Progressbar to all Slider types
+    * New Slider type > Slick - Text (Image as CSS Background)
+    * Add "autoplay" option to Basic Slider
 * Version: 0.2.2
     * Changed description
     * Bugfix: (TS) jQuery force on top
 * Version: 0.2.1
     * Bugfix: (TS) JS include switch
 * Version: 0.2.0
-    * Easing is now default and working [cssEase: cubic-bezier(0.950, 0.050, 0.795, 0.035)]
+    * Easing is now default and working [cssEase: cubic-bezier(0.455, 0.03, 0.515, 0.955)]
     * CSS improvements (thx to Oliver Oertel from analog.de)
 * Version: 0.1.0
     * Random sorting for Expert Slider

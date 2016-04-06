@@ -36,7 +36,7 @@
                             <config type="array">
                                 <type>input</type>
                                 <size>1</size>
-                                <default>3000</default>
+                                <default>5000</default>
                             </config>
                         </TCEforms>
                     </autoplaySpeed>
@@ -66,7 +66,7 @@
                             <config type="array">
                                 <type>input</type>
                                 <size>20</size>
-                                <default>cubic-bezier(0.950, 0.050, 0.795, 0.035)</default>
+                                <default>cubic-bezier(0.455, 0.03, 0.515, 0.955)</default>
                             </config>
                         </TCEforms>
                     </cssEase>

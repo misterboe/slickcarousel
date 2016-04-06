@@ -9,18 +9,19 @@
 
 [globalVar = LIT:1 = {$slick_js}]
     page.includeJSFooterlibs.slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
+    page.includeJSFooterlibs.progressbar = EXT:slickcarousel/Resources/Public/JavaScript/progressbar.min.js
 [global]
 
-[applicationContext = Development]
-    config {
-        compressJs = 0
-        compressCss = 0
-        concatenateCss = 0
-        concatenateJs = 0
-        concatenateJsAndCss = 0
-        inlineStyle2TempFile = 0
-    }
-[end]
+plugin.tx_slickcarousel.slick_progressbar_basic = {$slick_progressbar_basic}
+plugin.tx_slickcarousel.slick_progressbar_synced = {$slick_progressbar_synced}
+plugin.tx_slickcarousel.slick_progressbar_bgimg = {$slick_progressbar_bgimg}
+plugin.tx_slickcarousel.slick_progressbar_expert = {$slick_progressbar_expert}
+
+plugin.tx_slickcarousel.slick_progressbar_color = {$slick_progressbar_color}
+plugin.tx_slickcarousel.slick_progressbar_trailColor = {$slick_progressbar_trailColor}
+plugin.tx_slickcarousel.slick_progressbar_strokeWidth = {$slick_progressbar_strokeWidth}
+plugin.tx_slickcarousel.slick_progressbar_trailWidth = {$slick_progressbar_trailWidth}
+plugin.tx_slickcarousel.slick_progressbar_easing = {$slick_progressbar_easing}
 
 ### Template ###
 tt_content.slickcarousel = FLUIDTEMPLATE
@@ -94,6 +95,38 @@ tt_content.slickcarouselsync {
         20 {
             references.fieldName = slickdefault
             as = slickimages
+        }
+    }
+}
+
+tt_content.slickcarouselbgimg = FLUIDTEMPLATE
+tt_content.slickcarouselbgimg {
+    templateName = Slickcarouselbgimg
+    templateRootPaths {
+        10 = EXT:slickcarousel/Resources/Private/Templates/
+    }
+
+    partialRootPaths {
+        10 = EXT:slickcarousel/Resources/Private/Partials/
+    }
+
+    layoutRootPaths {
+        10 = EXT:slickcarousel/Resources/Private/Layouts/
+    }
+
+    dataProcessing {
+        10 = Bo\Slickcarousel\DataProcessing\FlexFormProcessor
+        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        20 {
+            table = tx_slickcarouselbgimg
+            as = slides
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = image
+                    as = images
+                }
+            }
         }
     }
 }

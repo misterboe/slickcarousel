@@ -11,6 +11,40 @@ $slick-dark: #000;
 @import "../bower_components/slick-carousel/slick/slick.scss";
 @import "../bower_components/slick-carousel/slick/slick-theme.scss";
 
+@keyframes slowFadeIn {
+  0% {
+    color: rgba(255, 255, 255, 0);
+    letter-spacing: -.02em;
+    opacity: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    transform: scale(.7);
+
+  }
+  30% {
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: .3em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    transform: scale(1);
+  }
+}
+
+.slick-container {
+  position: relative;
+
+  [ID*="loader-slick-"] {
+    bottom: -1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    opacity: .5;
+  }
+}
+
 .slick-slider {
   figure {
     margin: 0;
@@ -30,8 +64,13 @@ $slick-dark: #000;
     }
   }
 
-  .slick-current {
+  &.slick-bgimg {
+    .slick-item {
+      background-size: cover;
+    }
+  }
 
+  .slick-current {
     figcaption {
       @include fadeIn($delay: .5s);
     }
@@ -135,6 +174,62 @@ $slick-dark: #000;
 
       &:before {
         margin-left: -60%;
+      }
+    }
+  }
+}
+
+.slick-bgimg {
+  .slick-item {
+    background: no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+    .slick-text {
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      width: 96%;
+      margin-left: 2%;
+      text-align: center;
+      transform: translateY(-50%);
+
+      .h1 {
+        border: 0;
+        color: rgba(255, 255, 255, 1);
+        display: block;
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        line-height: 1.16;
+        margin: auto;
+        text-align: center;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        white-space: nowrap;
+        word-break: keep-all;
+      }
+
+      .h2 {
+        color: rgba(255, 255, 255, 1);
+        display: block;
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        line-height: 1.16;
+        text-align: center;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        white-space: nowrap;
+        word-break: keep-all;
+      }
+    }
+
+    &.slick-active {
+      .slick-text {
+        .h1,
+        .h2 {
+          animation: slowFadeIn 3s ease;
+        }
       }
     }
   }

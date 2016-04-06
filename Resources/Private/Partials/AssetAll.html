@@ -7,12 +7,16 @@
 	<f:section name="JS-Responsive">
 		<v:asset.script fluid="true" rewrite="true" name="slick-id{data.uid}">
 			$(document).ready(function () {
-				<f:if condition="{data.pi_flexform.randomSlide} == 'js'">
+			<f:if condition="{data.pi_flexform.randomSlide} == 'js'">
 					var total = $('#slick-id{data.uid} img').length,
 					rand = Math.floor( Math.random() * total );
-				</f:if>
+			</f:if>
 
-				$('#slick-id{data.uid}').slick({
+			<f:if condition="{slick-bgimg}">
+				$( '.slick-bgimg#slick-id{data.uid} .slick-item' ).height($( '#slick-id{data.uid}' ).width()*<f:format.raw>{data.slickheight}</f:format.raw>);
+			</f:if>
+
+			$('#slick-id{data.uid}').slick({
 					accessibility: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.accessibility)}</f:format.raw>,
 					autoplay: <f:format.raw>{f:if(then: 'true',  else: 'false',  condition: data.pi_flexform.autoplay)}</f:format.raw>,
 					autoplaySpeed: <f:format.raw>{data.pi_flexform.autoplaySpeed}</f:format.raw>,
