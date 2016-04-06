@@ -188,16 +188,15 @@ $slick-dark: #000;
 
     .slick-text {
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 50%;
-      height: 20%;
-      margin: auto;
+      overflow: hidden;
+      top: 50%;
+      width: 96%;
+      margin-left: 2%;
+      text-align: center;
+      transform: translateY(-50%);
 
       .h1 {
-        border: none;
+        border: 0;
         color: rgba(255, 255, 255, 1);
         display: block;
         font-size: 42px;
