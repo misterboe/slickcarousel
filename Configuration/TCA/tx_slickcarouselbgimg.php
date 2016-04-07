@@ -22,7 +22,7 @@ return array(
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ),
-        'iconfile' => 'EXT:slickcarousel/ext_icon.gif'
+        'iconfile' => 'EXT:slickcarousel/slick.svg'
     ),
     'interface' => array(
         'showRecordFieldList' => '

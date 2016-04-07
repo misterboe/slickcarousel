@@ -5,7 +5,7 @@ mod.wizards {
                 header = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickwizardheader
                 elements {
                     slickcarouselbasic {
-                        icon = EXT:slickcarousel/ext_icon.gif
+                        icon = EXT:slickcarousel/slick.svg
                         title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title
                         description =  LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.description
                         tt_content_defValues {
@@ -14,7 +14,7 @@ mod.wizards {
                     }
 
                     slickcarouselsync {
-                        icon = EXT:slickcarousel/ext_icon.gif
+                        icon = EXT:slickcarousel/slick.svg
                         title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title
                         description = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.description
                         tt_content_defValues {
@@ -23,7 +23,7 @@ mod.wizards {
                     }
 
                     slickcarouselbgimg {
-                        icon = EXT:slickcarousel/ext_icon.gif
+                        icon = EXT:slickcarousel/slick.svg
                         title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title
                         description =  LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.description
                         tt_content_defValues {
@@ -32,7 +32,7 @@ mod.wizards {
                     }
 
                     slickcarousel {
-                        icon = EXT:slickcarousel/ext_icon.gif
+                        icon = EXT:slickcarousel/slick.svg
                         title = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title
                         description = LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.description
                         tt_content_defValues {
