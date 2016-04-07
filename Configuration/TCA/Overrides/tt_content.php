@@ -111,6 +111,8 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'EXT:slickcarousel/ext_icon.gif'
 );
 
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbasic'] = 'slickicon';
+
 // Slick Basic - END
 
 // Slick Sync - START
@@ -144,6 +146,8 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'EXT:slickcarousel/ext_icon.gif'
 );
 
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselsync'] = 'slickicon';
+
 // Slick Sync - END
 
 // Slick Expert - START
@@ -175,6 +179,8 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'slickcarousel',
     'EXT:slickcarousel/ext_icon.gif'
 );
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarousel'] = 'slickicon';
 
 // Slick Expert - END
 
@@ -208,6 +214,8 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'slickcarouselbgimg',
     'EXT:slickcarousel/ext_icon.gif'
 );
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbgimg'] = 'slickicon';
 
 // Slick Text - END
 

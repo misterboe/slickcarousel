@@ -8,3 +8,12 @@ if (!defined('TYPO3_MODE')) {
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:'
     . $_EXTKEY . '/Configuration/PageTS/PageTS.ts">'
 );
+
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \TYPO3\CMS\Core\Imaging\IconRegistry::class
+);
+$iconRegistry->registerIcon(
+    'slickicon',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => 'EXT:slickcarousel/slick.svg']
+);
