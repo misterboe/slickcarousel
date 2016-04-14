@@ -63,6 +63,10 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.3.1
+    * Bugfix: recalculate height on window resize
+    * Bugfix: Slick Text Items shows slides of other content elements
+    * Add Icons for Backend
 * Version: 0.3.0
     * Add Progressbar to all Slider types
     * New Slider type > Slick - Text (Image as CSS Background)
