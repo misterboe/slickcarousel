@@ -14,6 +14,9 @@
 
 			<f:if condition="{slick-bgimg}">
 				$( '.slick-bgimg#slick-id{data.uid} .slick-item' ).height($( '#slick-id{data.uid}' ).width()*<f:format.raw>{data.slickheight}</f:format.raw>);
+				$( window ).resize(function() {
+					$( '.slick-bgimg#slick-id{data.uid} .slick-item' ).height($( '#slick-id{data.uid}' ).width()*<f:format.raw>{data.slickheight}</f:format.raw>);
+				});
 			</f:if>
 
 			$('#slick-id{data.uid}').slick({

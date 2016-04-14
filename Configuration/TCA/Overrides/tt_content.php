@@ -108,8 +108,10 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',
     'slickcarouselbasic',
-    'EXT:slickcarousel/ext_icon.gif'
+    'EXT:slickcarousel/slick.svg'
 );
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbasic'] = 'slickicon';
 
 // Slick Basic - END
 
@@ -141,8 +143,10 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title',
     'slickcarouselsync',
-    'EXT:slickcarousel/ext_icon.gif'
+    'EXT:slickcarousel/slick.svg'
 );
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselsync'] = 'slickicon';
 
 // Slick Sync - END
 
@@ -173,8 +177,10 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title',
     'slickcarousel',
-    'EXT:slickcarousel/ext_icon.gif'
+    'EXT:slickcarousel/slick.svg'
 );
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarousel'] = 'slickicon';
 
 // Slick Expert - END
 
@@ -206,8 +212,10 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
     'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
     'slickcarouselbgimg',
-    'EXT:slickcarousel/ext_icon.gif'
+    'EXT:slickcarousel/slick.svg'
 );
+
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbgimg'] = 'slickicon';
 
 // Slick Text - END
 
