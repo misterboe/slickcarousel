@@ -6,6 +6,7 @@ if (!defined('TYPO3_MODE')) {
 
 $GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config']['ratios']['3.5']  = 'slick - wide';
 $GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config']['ratios']['1.5']  = 'slick - 3:2';
+$GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config']['ratios']['1.77']  = 'slick - 16:9';
 
 // Actually unused
 
