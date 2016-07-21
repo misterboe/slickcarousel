@@ -63,6 +63,8 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.3.2
+    * Bugfix: PID of IRRE
 * Version: 0.3.1
     * Bugfix: recalculate height on window resize
     * Bugfix: Slick Text Items shows slides of other content elements
