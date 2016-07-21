@@ -119,6 +119,7 @@ tt_content.slickcarouselbgimg {
         20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         20 {
             table = tx_slickcarouselbgimg
+            pidInList.field = pid
             where {
                 data = field:uid
                 intval = 1
