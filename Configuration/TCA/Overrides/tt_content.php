@@ -66,21 +66,34 @@ $slick_default_fields = array(
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $slick_default_fields);
 
+// Dropdown Slick CE's - START
 
-// ************************************************
-// * Backup all default cTypes add new and resort *
-// ************************************************
-
-$backupCTypeItems = $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'];
-
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'] = array(
-    array(
-        'slickcarousel',
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'Slickcarousel',
         '--div--'
-    ),
+    ],
+    '--div--',
+    'before'
 );
 
+// Dropdown Slick CE's - END
+
 // Slick Basic - START
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',
+        'slickcarouselbasic',
+        'EXT:slickcarousel/slick.svg'
+    ],
+    '--div--',
+    'after'
+);
 
 $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
     'showitem' => '
@@ -105,17 +118,23 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = array(
 $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbasic'] =
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-basic.xml';
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbasic.title',
-    'slickcarouselbasic',
-    'EXT:slickcarousel/slick.svg'
-);
-
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbasic'] = 'slickicon';
 
 // Slick Basic - END
 
 // Slick Sync - START
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title',
+        'slickcarouselsync',
+        'EXT:slickcarousel/slick.svg'
+    ],
+    '--div--',
+    'after'
+);
 
 $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync'] = array(
     'showitem' => '
@@ -140,17 +159,23 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync'] = array(
 $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselsync'] =
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-synked.xml';
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselsync.title',
-    'slickcarouselsync',
-    'EXT:slickcarousel/slick.svg'
-);
-
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselsync'] = 'slickicon';
 
 // Slick Sync - END
 
 // Slick Expert - START
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title',
+        'slickcarousel',
+        'EXT:slickcarousel/slick.svg'
+    ],
+    '--div--',
+    'after'
+);
 
 $GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = array(
     'showitem' => '
@@ -174,17 +199,23 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = array(
 $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarousel'] =
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarousel.title',
-    'slickcarousel',
-    'EXT:slickcarousel/slick.svg'
-);
-
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarousel'] = 'slickicon';
 
 // Slick Expert - END
 
 // Slick Text - START
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
+        'slickcarouselbgimg',
+        'EXT:slickcarousel/slick.svg'
+    ],
+    '--div--',
+    'after'
+);
 
 $GLOBALS['TCA']['tt_content']['types']['slickcarouselbgimg'] = array(
     'showitem' => '
@@ -209,21 +240,6 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbgimg'] = array(
 $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbgimg'] =
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-    'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
-    'slickcarouselbgimg',
-    'EXT:slickcarousel/slick.svg'
-);
-
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbgimg'] = 'slickicon';
 
 // Slick Text - END
-
-
-foreach ($backupCTypeItems as $key => $value) {
-    $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = $value;
-}
-
-unset($key);
-unset($value);
-unset($backupCTypeItems);
