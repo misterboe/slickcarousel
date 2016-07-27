@@ -63,6 +63,8 @@ TCEFORM.tt_content.CType {
 ```
 
 ## Changelog:
+* Version: 0.3.3
+    * Changed the way adding CE types
 * Version: 0.3.2
     * Bugfix: PID of IRRE
 * Version: 0.3.1
