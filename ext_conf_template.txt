@@ -1,0 +1,13 @@
+# customsubcategory=140_ce=Disable Slickcarousel Content Elements
+
+# cat=Contentelements/140_ce/10; type=boolean; label=Slick - Basic
+disable_slickcarouselbasic = 0
+
+# cat=Contentelements/140_ce/20; type=boolean; label=Slick - Expert
+disable_slickcarousel = 0
+
+# cat=Contentelements/140_ce/20; type=boolean; label=Slick - Text
+disable_slickcarouselbgimg = 0
+
+# cat=Contentelements/140_ce/20; type=boolean; label=Slick - Synced
+disable_slickcarouselsync = 0
