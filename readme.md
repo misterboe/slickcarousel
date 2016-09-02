@@ -55,14 +55,13 @@
 
 ## How to disable different slick types
 
-### Page TS
-```
-TCEFORM.tt_content.CType {
-    removeItems = slickcarousel,slickcarouselbasic,slickcarouselsync,slickcarouselbgimg
-}
-```
+### Slick types cloud be disabled in Extension Configuration
+![image](https://snag.gy/lgb6Hu.jpg)
+
 
 ## Changelog:
+* Version: 1.0.0
+    * Disable Slick types in Extension Configuration
 * Version: 0.3.3
     * Changed the way adding CE types
 * Version: 0.3.2
