@@ -60,6 +60,8 @@
 
 
 ## Changelog:
+* Version: 1.0.0
+    * Disable Slick types in Extension Configuration
 * Version: 0.3.3
     * Changed the way adding CE types
 * Version: 0.3.2
