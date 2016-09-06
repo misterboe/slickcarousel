@@ -56,7 +56,6 @@ $slick-dark: #000;
       bottom: 0;
       color: $slick-light;
       font-size: 22px;
-      opacity: 0;
       padding: 1vh;
       position: absolute;
       text-align: center;
@@ -67,12 +66,6 @@ $slick-dark: #000;
   &.slick-bgimg {
     .slick-item {
       background-size: cover;
-    }
-  }
-
-  .slick-current {
-    figcaption {
-      @include fadeIn($delay: .5s);
     }
   }
 
