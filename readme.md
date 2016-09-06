@@ -60,6 +60,8 @@
 
 
 ## Changelog:
+* Version: 1.0.1
+    * BUGFIX: Remove figcaption transition
 * Version: 1.0.0
     * Disable Slick types in Extension Configuration
 * Version: 0.3.3
