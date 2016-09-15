@@ -60,6 +60,8 @@
 
 
 ## Changelog:
+* Version: 1.1.0
+    * Compatible with VHS 3.0.1 and PHP7
 * Version: 1.0.1
     * BUGFIX: Remove figcaption transition
 * Version: 1.0.0
