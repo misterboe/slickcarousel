@@ -195,7 +195,7 @@
                                         <numIndex index="1">progressive</numIndex>
                                     </numIndex>
                                 </items>
-                                <default>ondemand</default>
+                                <default>progressive</default>
                             </config>
                         </TCEforms>
                     </lazyLoad>
