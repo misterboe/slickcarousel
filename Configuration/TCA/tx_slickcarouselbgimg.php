@@ -8,8 +8,7 @@ return array(
         'cruser_id' => 'cruser_id',
         'title' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
         'delete' => 'deleted',
-        'versioningWS' => 2,
-        'versioning_followPages' => true,
+        'versioningWS' => true,
         'origUid' => 't3_origuid',
         'hideAtCopy' => false,
         'prependAtCopy' => 'LLL:EXT:lang/locallang_general.xlf:LGL.prependAtCopy',
@@ -61,39 +60,38 @@ return array(
                 )
             )
         ),
-        'starttime' => array(
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
-            'config' => array(
+        'starttime' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+            'config' => [
                 'type' => 'input',
-                'size' => '13',
-                'max' => '20',
+                'renderType' => 'inputDateTime',
                 'eval' => 'datetime',
-                'default' => '0'
-            ),
+                'default' => 0
+            ],
             'l10n_mode' => 'exclude',
             'l10n_display' => 'defaultAsReadonly'
-        ),
-        'endtime' => array(
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
-            'config' => array(
+        ],
+        'endtime' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+            'config' => [
                 'type' => 'input',
-                'size' => '13',
-                'max' => '20',
+                'renderType' => 'inputDateTime',
                 'eval' => 'datetime',
-                'default' => '0',
-                'range' => array(
-                    'upper' => mktime(0, 0, 0, 12, 31, 2020)
-                )
-            ),
+                'default' => 0,
+                'range' => [
+                    'upper' => mktime(0, 0, 0, 1, 1, 2038)
+                ]
+            ],
             'l10n_mode' => 'exclude',
             'l10n_display' => 'defaultAsReadonly'
-        ),
+        ],
         'sys_language_uid' => array(
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
             'config' => array(
+                'renderType' => 'selectSingle',
                 'type' => 'select',
                 'foreign_table' => 'sys_language',
                 'foreign_table_where' => 'ORDER BY sys_language.title',
@@ -114,6 +112,7 @@ return array(
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.php:LGL.l18n_parent',
             'config' => Array(
+                'renderType' => 'selectSingle',
                 'type' => 'select',
                 'items' => Array(
                     Array('', 0),

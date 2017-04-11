@@ -78,7 +78,6 @@ $slick_default_fields = array(
                 ),
             ),
             'behaviour' => array(
-                'localizationMode' => 'select',
                 'mode' => 'select',
                 'localizeChildrenAtParentLocalization' => true,
             ),
