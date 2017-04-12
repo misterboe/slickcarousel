@@ -33,30 +33,28 @@ if ((int)TYPO3_version == 8) {
 }
 
 $slick_default_fields = array(
-    'slickdefault' => array(
-        'exclude' => 0,
-        'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slides',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-            'slickdefault',
-            array(
-                'collapseAll' => 1,
-                'maxitems' => 99,
-                'foreign_types' => array(
-                    '0' => array(
+    'slickdefault' => [
+        'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.images',
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('slickdefault', [
+            'appearance' => [
+                'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
+            ],
+            'overrideChildTca' => [
+                'types' => [
+                    '0' => [
                         'showitem' => '
-    										--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-    										--palette--;;filePalette'
-                    ),
-                    \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => array(
+                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;slickslider,
+                                --palette--;;slickslider'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                         'showitem' => '
-    										--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;slickslider,
-    										--palette--;;filePalette'
-                    ),
-                )
-            ),
-            $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-        ),
-    ),
+                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;slickslider,
+                                --palette--;;filePalette'
+                    ]
+                ],
+            ],
+        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+    ],
     'tx_slickcarouselbgimg' => array(
         'exclude' => 0,
         'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.title',
@@ -141,6 +139,29 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbasic'] = 'slickicon';
 
+$GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic']['columnsOverrides']['slickdefault']['config']['overrideChildTca']['columns']['crop']['config'] = [
+    'cropVariants' => [
+        'default' => [
+            'title' => 'Slick Image Crop',
+            'allowedAspectRatios' => [
+                '3:2' => [
+                    'title' => 'Slick 3:2',
+                    'value' => 4 / 3
+                ],
+                '16:9' => [
+                    'title' => 'Slick 16:9',
+                    'value' => 16 / 9
+                ],
+                '21:9' => [
+                    'title' => 'Slick 21:9',
+                    'value' => 21 / 9
+                ],
+            ],
+            'selectedRatio' => '21:9',
+        ],
+    ],
+];
+
 // Slick Basic - END
 
 // Slick Sync - START
@@ -172,6 +193,48 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselsync'] = 'slickicon';
 
+
+$GLOBALS['TCA']['tt_content']['types']['slickcarouselsync']['columnsOverrides']['slickdefault']['config']['overrideChildTca']['columns']['crop']['config'] = [
+    'cropVariants' => [
+        'default' => [
+            'title' => 'Slick Image Crop',
+            'allowedAspectRatios' => [
+                '3:2' => [
+                    'title' => 'Slick 3:2',
+                    'value' => 4 / 3
+                ],
+                '16:9' => [
+                    'title' => 'Slick 16:9',
+                    'value' => 16 / 9
+                ],
+                '21:9' => [
+                    'title' => 'Slick 21:9',
+                    'value' => 21 / 9
+                ],
+            ],
+            'selectedRatio' => '21:9',
+        ],
+        'thumbnails' => [
+            'title' => 'Slick Thumbnail Crop',
+            'allowedAspectRatios' => [
+                '3:2' => [
+                    'title' => 'Slick 3:2',
+                    'value' => 4 / 3
+                ],
+                '16:9' => [
+                    'title' => 'Slick 16:9',
+                    'value' => 16 / 9
+                ],
+                '21:9' => [
+                    'title' => 'Slick 21:9',
+                    'value' => 21 / 9
+                ],
+            ],
+            'selectedRatio' => '4:3',
+        ],
+    ],
+];
+
 // Slick Sync - END
 
 // Slick Expert - START
@@ -201,6 +264,29 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarousel'] = 'slickicon';
+
+$GLOBALS['TCA']['tt_content']['types']['slickcarousel']['columnsOverrides']['slickdefault']['config']['overrideChildTca']['columns']['crop']['config'] = [
+    'cropVariants' => [
+        'default' => [
+            'title' => 'Slick Image Crop',
+            'allowedAspectRatios' => [
+                '3:2' => [
+                    'title' => 'Slick 3:2',
+                    'value' => 4 / 3
+                ],
+                '16:9' => [
+                    'title' => 'Slick 16:9',
+                    'value' => 16 / 9
+                ],
+                '21:9' => [
+                    'title' => 'Slick 21:9',
+                    'value' => 21 / 9
+                ],
+            ],
+            'selectedRatio' => '21:9',
+        ],
+    ],
+];
 
 // Slick Expert - END
 
@@ -232,5 +318,28 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickc
     'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbgimg'] = 'slickicon';
+
+$GLOBALS['TCA']['tx_slickcarouselbgimg']['types']['1']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] = [
+    'cropVariants' => [
+        'default' => [
+            'title' => 'Slick Image Crop',
+            'allowedAspectRatios' => [
+                '3:2' => [
+                    'title' => 'Slick 3:2',
+                    'value' => 4 / 3
+                ],
+                '16:9' => [
+                    'title' => 'Slick 16:9',
+                    'value' => 16 / 9
+                ],
+                '21:9' => [
+                    'title' => 'Slick 21:9',
+                    'value' => 21 / 9
+                ],
+            ],
+            'selectedRatio' => '21:9',
+        ],
+    ],
+];
 
 // Slick Text - END

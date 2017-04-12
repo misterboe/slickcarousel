@@ -144,29 +144,27 @@ return array(
                 'eval' => 'trim'
             ),
         ),
-        'image' => array(
-            'exclude' => 0,
-            'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.image',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'image',
-                array(
-                    'collapseAll' => 1,
-                    'maxitems' => 1,
-                    'foreign_types' => array(
-                        '0' => array(
+        'image' => [
+            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.images',
+            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('image', [
+                'appearance' => [
+                    'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
+                ],
+                'overrideChildTca' => [
+                    'types' => [
+                        '0' => [
                             'showitem' => '
-        										--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-        										--palette--;;filePalette'
-                        ),
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => array(
+                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;slickslider,
+                                --palette--;;slickslider'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                             'showitem' => '
-        										--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-        										--palette--;;filePalette'
-                        ),
-                    )
-                ),
-                $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
-            ),
-        ),
+                                --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;slickslider,
+                                --palette--;;filePalette'
+                        ]
+                    ],
+                ],
+            ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ],
     ),
 );

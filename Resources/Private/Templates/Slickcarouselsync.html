@@ -32,7 +32,7 @@
 				<f:for each="{slickimages}" as="file" iteration="i">
 					<div class="slick-item">
 						<figure>
-							<img class="slick-img" data-lazy="{f:uri.image(image: file, maxWidth: 1980)}" title="{file.title}" alt="{file.alternative}" />
+							<f:image image="{file}" cropVariant="thumbnails" class="slick-img" maxWidth="300" />
 						</figure>
 					</div>
 				</f:for>
