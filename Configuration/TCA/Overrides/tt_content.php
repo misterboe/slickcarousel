@@ -156,8 +156,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic']['columnsOverrides']
                     'title' => 'Slick 21:9',
                     'value' => 21 / 9
                 ],
+                'NaN' => [
+                    'title' => 'Free',
+                    'value' => 0.0
+                ],
             ],
-            'selectedRatio' => '21:9',
+            'selectedRatio' => 'NaN',
         ],
     ],
 ];
@@ -211,8 +215,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync']['columnsOverrides'][
                     'title' => 'Slick 21:9',
                     'value' => 21 / 9
                 ],
+                'NaN' => [
+                    'title' => 'Free',
+                    'value' => 0.0
+                ],
             ],
-            'selectedRatio' => '21:9',
+            'selectedRatio' => 'NaN',
         ],
         'thumbnails' => [
             'title' => 'Slick Thumbnail Crop',
@@ -229,8 +237,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync']['columnsOverrides'][
                     'title' => 'Slick 21:9',
                     'value' => 21 / 9
                 ],
+                'NaN' => [
+                    'title' => 'Free',
+                    'value' => 0.0
+                ],
             ],
-            'selectedRatio' => '4:3',
+            'selectedRatio' => 'NaN',
         ],
     ],
 ];
@@ -282,8 +294,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarousel']['columnsOverrides']['sli
                     'title' => 'Slick 21:9',
                     'value' => 21 / 9
                 ],
+                'NaN' => [
+                    'title' => 'Free',
+                    'value' => 0.0
+                ],
             ],
-            'selectedRatio' => '21:9',
+            'selectedRatio' => 'NaN',
         ],
     ],
 ];
@@ -336,8 +352,12 @@ $GLOBALS['TCA']['tx_slickcarouselbgimg']['types']['1']['columnsOverrides']['imag
                     'title' => 'Slick 21:9',
                     'value' => 21 / 9
                 ],
+                'NaN' => [
+                    'title' => 'Free',
+                    'value' => 0.0
+                ],
             ],
-            'selectedRatio' => '21:9',
+            'selectedRatio' => 'NaN',
         ],
     ],
 ];
