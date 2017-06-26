@@ -4,7 +4,7 @@ $EM_CONF[$_EXTKEY] = array(
     'title' => 'Slick Carousel',
     'description' => 'Slick Carousel (Slider) - Responsive, Multiple Items, Center Mode, Lazy Loading, Autoplay, Slider Syncing (Gallery)',
     'category' => 'templates',
-    'version' => '1.2.0',
+    'version' => '2.0.0',
     'state' => 'stable',
     'clearcacheonload' => 1,
     'author' => 'Boris Schauer, Oliver Oertel',
@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_company' => 'bschauer, analog',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '7.6.0-8.7.99',
+            'typo3' => '8.6.0-8.7.99',
             'vhs' => '*',
         ),
         'conflicts' => array(),
