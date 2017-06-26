@@ -146,7 +146,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic']['columnsOverrides']
             'allowedAspectRatios' => [
                 '3:2' => [
                     'title' => 'Slick 3:2',
-                    'value' => 4 / 3
+                    'value' => 3 / 2
                 ],
                 '16:9' => [
                     'title' => 'Slick 16:9',
@@ -205,7 +205,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync']['columnsOverrides'][
             'allowedAspectRatios' => [
                 '3:2' => [
                     'title' => 'Slick 3:2',
-                    'value' => 4 / 3
+                    'value' => 3 / 2
                 ],
                 '16:9' => [
                     'title' => 'Slick 16:9',
@@ -227,7 +227,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync']['columnsOverrides'][
             'allowedAspectRatios' => [
                 '3:2' => [
                     'title' => 'Slick 3:2',
-                    'value' => 4 / 3
+                    'value' => 3 / 2
                 ],
                 '16:9' => [
                     'title' => 'Slick 16:9',
@@ -284,7 +284,7 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarousel']['columnsOverrides']['sli
             'allowedAspectRatios' => [
                 '3:2' => [
                     'title' => 'Slick 3:2',
-                    'value' => 4 / 3
+                    'value' => 3 / 2
                 ],
                 '16:9' => [
                     'title' => 'Slick 16:9',
@@ -342,7 +342,7 @@ $GLOBALS['TCA']['tx_slickcarouselbgimg']['types']['1']['columnsOverrides']['imag
             'allowedAspectRatios' => [
                 '3:2' => [
                     'title' => 'Slick 3:2',
-                    'value' => 4 / 3
+                    'value' => 3 / 2
                 ],
                 '16:9' => [
                     'title' => 'Slick 16:9',
