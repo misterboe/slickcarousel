@@ -4,7 +4,7 @@
   "type": "typo3-cms-extension",
   "version": "2.0.0",
   "require": {
-    "typo3/cms": "8.7",
+    "typo3/cms": "^8.7",
     "fluidtypo3/vhs": "*"
   },
   "authors": [
