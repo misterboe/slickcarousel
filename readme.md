@@ -32,7 +32,7 @@
 * Supports image crop
 
 ![image](http://snag.gy/LNt5C.jpg)
-![image](http://snag.gy/FsWNa.jpg)
+![image](https://snag.gy/2SyjTN.jpg)
 
 ## slick - Synced
 * Description (Caption) is shown in frontend on the upper slide
