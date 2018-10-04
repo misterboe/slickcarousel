@@ -1,36 +1,23 @@
 <?php
 
-if ((int)TYPO3_version == 7) {
-    $showitem_default_01 = '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,';
-    $showitem_default_02 = '--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-                                    layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
-                                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
-                            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
-                                    hidden;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:field.default.hidden,
-                                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
-                            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
-                            --div--;LLL:EXT:lang/locallang_tca.xlf:sys_category.tabs.category,categories
-                            ';
-}
-if ((int)TYPO3_version == 8) {
-    $showitem_default_01 = '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                            ';
-    $showitem_default_02 = '--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-                                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
-                                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
-                            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-                                --palette--;;language,
-                            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-                                --palette--;;hidden,
-                                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
-                            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
-                                    categories,
-                            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
-                                    rowDescription,
-                            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-                            ';
-}
+$showitem_default_01 = '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+                            --palette--;;general,
+                            --palette--;;headers,
+                        ';
+$showitem_default_02 = '--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+                            --palette--;;frames,
+                            --palette--;;appearanceLinks,
+                        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+                            --palette--;;language,
+                        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+                            --palette--;;hidden,
+                            --palette--;;access,
+                        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+                            categories,
+                        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
+                            rowDescription,
+                        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
+                        ';
 
 $slick_default_fields = array(
     'slickdefault' => [
