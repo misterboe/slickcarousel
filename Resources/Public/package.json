@@ -1,0 +1,11 @@
+{
+  "name": "slickcarousel",
+  "version": "3.0.0",
+  "description": "Slickcarousel for TYPO3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris Schauer",
+  "license": "ISC"
+}
