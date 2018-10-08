@@ -1,6 +1,6 @@
 <?php
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'label' => 'headline',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
@@ -16,23 +16,23 @@ return array(
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'languageField' => 'sys_language_uid',
         'dividers2tabs' => true,
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
             'endtime' => 'endtime',
-        ),
+        ],
         'iconfile' => 'EXT:slickcarousel/slick.svg'
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => '
         hidden,
         headline,
         subline,
         image,
         ',
-    ),
-    'types' => array(
-        '1' => array(
+    ],
+    'types' => [
+        '1' => [
             'showitem' => '
             headline,
             subline,
@@ -42,24 +42,24 @@ return array(
             starttime,
             endtime
         '
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => ''),
-    ),
-    'columns' => array(
-        'hidden' => array(
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => ''],
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type' => 'check',
-                'items' => array(
-                    '1' => array(
+                'items' => [
+                    '1' => [
                         '0' => 'LLL:EXT:cms/locallang_ttc.xlf:hidden.I.0'
-                    )
-                )
-            )
-        ),
+                    ]
+                ]
+            ]
+        ],
         'starttime' => [
             'exclude' => true,
             'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
@@ -87,63 +87,63 @@ return array(
             'l10n_mode' => 'exclude',
             'l10n_display' => 'defaultAsReadonly'
         ],
-        'sys_language_uid' => array(
+        'sys_language_uid' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
-            'config' => array(
+            'config' => [
                 'renderType' => 'selectSingle',
                 'type' => 'select',
                 'foreign_table' => 'sys_language',
                 'foreign_table_where' => 'ORDER BY sys_language.title',
-                'items' => array(
-                    array(
+                'items' => [
+                    [
                         'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
                         -1
-                    ),
-                    array(
+                    ],
+                    [
                         'LLL:EXT:lang/locallang_general.xlf:LGL.default_value',
                         0
-                    )
-                )
-            )
-        ),
-        'l10n_parent' => Array(
+                    ]
+                ]
+            ]
+        ],
+        'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.php:LGL.l18n_parent',
-            'config' => Array(
+            'config' => [
                 'renderType' => 'selectSingle',
                 'type' => 'select',
-                'items' => Array(
-                    Array('', 0),
-                ),
+                'items' => [
+                    ['', 0],
+                ],
                 'foreign_table' => 'tx_slickcarouselbgimg',
                 'foreign_table_where' => 'AND tx_slickcarouselbgimg.uid=###REC_FIELD_l10n_parent### AND tx_slickcarouselbgimg.sys_language_uid IN (-1,0)',
-            )
-        ),
-        'l10n_diffsource' => Array(
-            'config' => array(
+            ]
+        ],
+        'l10n_diffsource' => [
+            'config' => [
                 'type' => 'passthrough'
-            )
-        ),
-        'headline' => array(
+            ]
+        ],
+        'headline' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.headline',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => 60,
                 'eval' => 'trim'
-            ),
-        ),
-        'subline' => array(
+            ],
+        ],
+        'subline' => [
             'exclude' => 0,
             'label' => 'LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:slickcarouselbging.subline',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => 60,
                 'eval' => 'trim'
-            ),
-        ),
+            ],
+        ],
         'image' => [
             'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.images',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('image', [
@@ -166,5 +166,5 @@ return array(
                 ],
             ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
         ],
-    ),
-);
+    ],
+];
