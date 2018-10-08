@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_company' => 'bschauer, analog',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '9.*',
+            'typo3' => '9.5.0-9.5.99',
             'vhs' => '*',
         ),
         'conflicts' => array(),
