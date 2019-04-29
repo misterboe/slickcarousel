@@ -121,8 +121,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbasic'] = [
 		' . $showitem_default_02,
 ];
 
-$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbasic'] =
-    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-basic.xml';
+unset($GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbasic']);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-basic.xml',
+    'slickcarouselbasic'
+);
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbasic'] = 'slickicon';
 
@@ -179,8 +183,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselsync'] = [
         ' . $showitem_default_02,
 ];
 
-$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselsync'] =
-    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-synked.xml';
+unset($GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselsync']);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-synked.xml',
+    'slickcarouselsync'
+);
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselsync'] = 'slickicon';
 
@@ -258,8 +266,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarousel'] = [
 	    ' . $showitem_default_02,
 ];
 
-$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarousel'] =
-    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
+unset($GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarousel']);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml',
+    'slickcarousel'
+);
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarousel'] = 'slickicon';
 
@@ -316,8 +328,12 @@ $GLOBALS['TCA']['tt_content']['types']['slickcarouselbgimg'] = [
         ' . $showitem_default_02,
 ];
 
-$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbgimg'] =
-    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml';
+unset($GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',slickcarouselbgimg']);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:slickcarousel/Configuration/FlexForms/slick-responsive.xml',
+    'slickcarouselbgimg'
+);
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slickcarouselbgimg'] = 'slickicon';
 
