@@ -1,16 +1,16 @@
-[globalVar = LIT:1 = {$slick_css}]
+[{$slick_css} == '1']
     page.includeCSS.slickcarousel = EXT:slickcarousel/Resources/Public/Css/slick.min.css
-[global]
+[END]
 
-[globalVar = LIT:1 = {$slick_jquery}]
+[{$slick_jquery} == '1']
     page.includeJSFooterlibs.jQuery = EXT:slickcarousel/Resources/Public/JavaScript/jquery.min.js
     page.includeJSFooterlibs.jQuery.forceOnTop = true
-[global]
+[END]
 
-[globalVar = LIT:1 = {$slick_js}]
+[{$slick_js} == '1']
     page.includeJSFooterlibs.slick = EXT:slickcarousel/Resources/Public/JavaScript/slick.min.js
     page.includeJSFooterlibs.progressbar = EXT:slickcarousel/Resources/Public/JavaScript/progressbar.min.js
-[global]
+[END]
 
 plugin.tx_slickcarousel.slick_progressbar_basic = {$slick_progressbar_basic}
 plugin.tx_slickcarousel.slick_progressbar_synced = {$slick_progressbar_synced}
