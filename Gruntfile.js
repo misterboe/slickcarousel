@@ -1,3 +1,5 @@
+const sass = require('node-sass');
+
 module.exports = function (grunt) {
     require('jit-grunt')(grunt);
     require('time-grunt')(grunt);
@@ -15,6 +17,7 @@ module.exports = function (grunt) {
         },
         sass: {
             options: {
+                implementation: sass,
                 sourceMap: true,
                 sourceMapContents: true
             },
@@ -47,5 +50,5 @@ module.exports = function (grunt) {
         }
 
     });
-    grunt.registerTask('default', ['shell', 'sass', 'postcss', 'watch']);
+    grunt.registerTask('default', ['shell', 'sass', 'postcss']);
 };
