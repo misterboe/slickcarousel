@@ -185,6 +185,7 @@
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:lazyLoad</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items type="array">
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">ondemand</numIndex>
@@ -224,6 +225,7 @@
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:respondTo</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items type="array">
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">window</numIndex>
