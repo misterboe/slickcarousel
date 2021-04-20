@@ -5,8 +5,6 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/?branch=develop)
 [![Build Status](https://scrutinizer-ci.com/g/misterboe/slickcarousel/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/misterboe/slickcarousel/build-status/develop)
 
-![image](http://snag.gy/F79ys.jpg)
-
 ## Settings
 * Basic Slick - Constants
 
