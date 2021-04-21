@@ -88,42 +88,40 @@ return [
             'l10n_display' => 'defaultAsReadonly'
         ],
         'sys_language_uid' => [
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
+            'exclude' => true,
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
-                'renderType' => 'selectSingle',
                 'type' => 'select',
-                'foreign_table' => 'sys_language',
-                'foreign_table_where' => 'ORDER BY sys_language.title',
+                'renderType' => 'selectSingle',
+                'special' => 'languages',
                 'items' => [
                     [
-                        'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
-                        -1
+                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                        -1,
+                        'flags-multiple'
                     ],
-                    [
-                        'LLL:EXT:lang/locallang_general.xlf:LGL.default_value',
-                        0
-                    ]
-                ]
+                ],
+                'default' => 0,
             ]
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.php:LGL.l18n_parent',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
-                'renderType' => 'selectSingle',
                 'type' => 'select',
+                'renderType' => 'selectSingle',
                 'items' => [
-                    ['', 0],
+                    ['', 0]
                 ],
                 'foreign_table' => 'tx_slickcarouselbgimg',
                 'foreign_table_where' => 'AND tx_slickcarouselbgimg.uid=###REC_FIELD_l10n_parent### AND tx_slickcarouselbgimg.sys_language_uid IN (-1,0)',
+                'default' => 0
             ]
         ],
         'l10n_diffsource' => [
             'config' => [
-                'type' => 'passthrough'
+                'type' => 'passthrough',
+                'default' => ''
             ]
         ],
         'headline' => [

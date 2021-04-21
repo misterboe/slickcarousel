@@ -2,7 +2,6 @@
 
 $showitem_default_01 = '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                             --palette--;;general,
-                            --palette--;;headers,
                         ';
 $showitem_default_02 = '--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                             --palette--;;frames,

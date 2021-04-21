@@ -82,6 +82,7 @@
                             <label>LLL:EXT:slickcarousel/Resources/Private/Language/be_locallang.xlf:lazyLoad</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items type="array">
                                     <numIndex index="0" type="array"><numIndex index="0">ondemand</numIndex><numIndex index="1">ondemand</numIndex></numIndex>
                                     <numIndex index="1" type="array"><numIndex index="0">progressive</numIndex><numIndex index="1">progressive</numIndex></numIndex>
