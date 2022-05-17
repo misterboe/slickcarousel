@@ -6,7 +6,7 @@ if (!defined('TYPO3_MODE')) {
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     'slickcarousel', // Extension Key
-    'Configuration/TypoScript', // Path to setup.txt and constants.txt
+    'Configuration/TypoScript', // Path to setup.typoscript and constants.typoscript
     'Slick Carousel'            // Title in the selector box
 );
 

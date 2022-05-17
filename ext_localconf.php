@@ -5,7 +5,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slickcarousel/Configuration/PageTS/PageTS.ts">'
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slickcarousel/Configuration/PageTS/PageTS.typoscript">'
 );
 
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
