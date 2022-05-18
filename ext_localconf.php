@@ -5,16 +5,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slickcarousel/Configuration/PageTS/PageTS.ts">'
-);
-
-$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Imaging\IconRegistry::class
-);
-$iconRegistry->registerIcon(
-    'slickicon',
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => 'EXT:slickcarousel/slick.svg']
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slickcarousel/Configuration/PageTS/PageTS.typoscript">'
 );
 
 /***************
