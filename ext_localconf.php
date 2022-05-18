@@ -8,15 +8,6 @@ if (!defined('TYPO3_MODE')) {
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slickcarousel/Configuration/PageTS/PageTS.typoscript">'
 );
 
-$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Imaging\IconRegistry::class
-);
-$iconRegistry->registerIcon(
-    'slickicon',
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => 'EXT:slickcarousel/slick.svg']
-);
-
 /***************
  * Make the extension configuration accessible
  */
